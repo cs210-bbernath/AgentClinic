@@ -2,6 +2,7 @@ import argparse
 import anthropic
 from transformers import pipeline
 import openai, re, random, time, json, replicate, os
+from openai import OpenAI
 
 llama2_url = "meta/llama-2-70b-chat"
 llama3_url = "meta/meta-llama-3-70b-instruct"
@@ -18,163 +19,176 @@ def inference_huggingface(prompt, pipe):
 
 
 def query_model(model_str, prompt, system_prompt, tries=30, timeout=20.0, image_requested=False, scene=None, max_prompt_len=2**14, clip_prompt=False):
-    if model_str not in ["gpt4", "gpt3.5", "gpt4o", 'llama-2-70b-chat', "mixtral-8x7b", "gpt-4o-mini", "llama-3-70b-instruct", "gpt4v", "claude3.5sonnet", "o1-preview"] and "_HF" not in model_str:
+    if model_str not in ["gpt4", "gpt3.5", "gpt4o", 'llama-2-70b-chat', "mixtral-8x7b", "gpt-4o-mini", "llama-3-70b-instruct", "gpt4v", "claude3.5sonnet", "o1-preview", "llama-3-70b-meditron"] and "_HF" not in model_str:
         raise Exception("No model by the name {}".format(model_str))
     for _ in range(tries):
         if clip_prompt: prompt = prompt[:max_prompt_len]
-        try:
-            if image_requested:
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", 
-                    "content": [
-                        {"type": "text", "text": prompt},
-                        {"type": "image_url",
-                            "image_url": {
-                                "url": "{}".format(scene.image_url),
-                            },
+        #try:
+        if image_requested:
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", 
+                "content": [
+                    {"type": "text", "text": prompt},
+                    {"type": "image_url",
+                        "image_url": {
+                            "url": "{}".format(scene.image_url),
                         },
-                    ]},]
-                if model_str == "gpt4v":
-                    response = openai.ChatCompletion.create(
-                            model="gpt-4-vision-preview",
-                            messages=messages,
-                            temperature=0.05,
-                            max_tokens=200,
-                        )
-                elif model_str == "gpt-4o-mini":
-                    response = openai.ChatCompletion.create(
-                            model="gpt-4o-mini",
-                            messages=messages,
-                            temperature=0.05,
-                            max_tokens=200,
-                        )
-                elif model_str == "gpt4":
-                    response = openai.ChatCompletion.create(
-                            model="gpt-4-turbo",
-                            messages=messages,
-                            temperature=0.05,
-                            max_tokens=200,
-                        )
-                elif model_str == "gpt4o":
-                    response = openai.ChatCompletion.create(
-                            model="gpt-4o",
-                            messages=messages,
-                            temperature=0.05,
-                            max_tokens=200,
-                        )
-                answer = response["choices"][0]["message"]["content"]
-            if model_str == "gpt4":
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}]
-                response = openai.ChatCompletion.create(
-                        model="gpt-4-turbo-preview",
-                        messages=messages,
-                        temperature=0.05,
-                        max_tokens=200,
-                    )
-                answer = response["choices"][0]["message"]["content"]
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == "gpt4v":
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}]
+                    },
+                ]},]
+            if model_str == "gpt4v":
                 response = openai.ChatCompletion.create(
                         model="gpt-4-vision-preview",
                         messages=messages,
                         temperature=0.05,
                         max_tokens=200,
                     )
-                answer = response["choices"][0]["message"]["content"]
-                answer = re.sub("\s+", " ", answer)
             elif model_str == "gpt-4o-mini":
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}]
                 response = openai.ChatCompletion.create(
                         model="gpt-4o-mini",
                         messages=messages,
                         temperature=0.05,
                         max_tokens=200,
                     )
-                answer = response["choices"][0]["message"]["content"]
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == "o1-preview":
-                messages = [
-                    {"role": "user", "content": system_prompt + prompt}]
+            elif model_str == "gpt4":
                 response = openai.ChatCompletion.create(
-                        model="o1-preview-2024-09-12",
-                        messages=messages,
-                    )
-                answer = response["choices"][0]["message"]["content"]
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == "gpt3.5":
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}]
-                response = openai.ChatCompletion.create(
-                        model="gpt-3.5-turbo",
+                        model="gpt-4-turbo",
                         messages=messages,
                         temperature=0.05,
                         max_tokens=200,
                     )
-                answer = response["choices"][0]["message"]["content"]
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == "claude3.5sonnet":
-                client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-                message = client.messages.create(
-                    model="claude-3-5-sonnet-20240620",
-                    system=system_prompt,
-                    max_tokens=256,
-                    messages=[{"role": "user", "content": prompt}])
-                answer = json.loads(message.to_json())["content"][0]["text"]
             elif model_str == "gpt4o":
-                messages = [
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": prompt}]
                 response = openai.ChatCompletion.create(
                         model="gpt-4o",
                         messages=messages,
                         temperature=0.05,
                         max_tokens=200,
                     )
-                answer = response["choices"][0]["message"]["content"]
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == 'llama-2-70b-chat':
-                output = replicate.run(
-                    llama2_url, input={
-                        "prompt":  prompt, 
+            answer = response["choices"][0]["message"]["content"]
+        if model_str == "gpt4":
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}]
+            client = OpenAI(api_key="")
+            chat_completion = client.chat.completions.create(model="gpt-4-turbo-preview", messages=messages,
+                    temperature=0.05,
+                    max_tokens=200,)
+            answer = chat_completion.choices[0].message.content
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == "gpt4v":
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}]
+            response = openai.ChatCompletion.create(
+                    model="gpt-4-vision-preview",
+                    messages=messages,
+                    temperature=0.05,
+                    max_tokens=200,
+                )
+            answer = response["choices"][0]["message"]["content"]
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == "gpt-4o-mini":
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}]
+            response = openai.ChatCompletion.create(
+                    model="gpt-4o-mini",
+                    messages=messages,
+                    temperature=0.05,
+                    max_tokens=200,
+                )
+            answer = response["choices"][0]["message"]["content"]
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == "o1-preview":
+            messages = [
+                {"role": "user", "content": system_prompt + prompt}]
+            response = openai.ChatCompletion.create(
+                    model="o1-preview-2024-09-12",
+                    messages=messages,
+                )
+            answer = response["choices"][0]["message"]["content"]
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == "gpt3.5":
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}]
+            response = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo",
+                    messages=messages,
+                    temperature=0.05,
+                    max_tokens=200,
+                )
+            answer = response["choices"][0]["message"]["content"]
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == "claude3.5sonnet":
+            client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+            message = client.messages.create(
+                model="claude-3-5-sonnet-20240620",
+                system=system_prompt,
+                max_tokens=256,
+                messages=[{"role": "user", "content": prompt}])
+            answer = json.loads(message.to_json())["content"][0]["text"]
+        elif model_str == "gpt4o":
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}]
+            response = openai.ChatCompletion.create(
+                    model="gpt-4o",
+                    messages=messages,
+                    temperature=0.05,
+                    max_tokens=200,
+                )
+            answer = response["choices"][0]["message"]["content"]
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == 'llama-2-70b-chat':
+            output = replicate.run(
+                llama2_url, input={
+                    "prompt":  prompt, 
+                    "system_prompt": system_prompt,
+                    "max_new_tokens": 200})
+            answer = ''.join(output)
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == 'mixtral-8x7b':
+            output = replicate.run(
+                mixtral_url, 
+                input={"prompt": prompt, 
                         "system_prompt": system_prompt,
-                        "max_new_tokens": 200})
-                answer = ''.join(output)
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == 'mixtral-8x7b':
-                output = replicate.run(
-                    mixtral_url, 
-                    input={"prompt": prompt, 
-                            "system_prompt": system_prompt,
-                            "max_new_tokens": 75})
-                answer = ''.join(output)
-                answer = re.sub("\s+", " ", answer)
-            elif model_str == 'llama-3-70b-instruct':
-                output = replicate.run(
-                    llama3_url, input={
-                        "prompt":  prompt, 
-                        "system_prompt": system_prompt,
-                        "max_new_tokens": 200})
-                answer = ''.join(output)
-                answer = re.sub("\s+", " ", answer)
-            elif "HF_" in model_str:
-                input_text = system_prompt + prompt 
-                #if self.pipe is None:
-                #    self.pipe = load_huggingface_model(self.backend.replace("HF_", ""))
-                raise Exception("Sorry, fixing TODO :3") #inference_huggingface(input_text, self.pipe)
-            return answer
+                        "max_new_tokens": 75})
+            answer = ''.join(output)
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == 'llama-3-70b-instruct':
+            output = replicate.run(
+                llama3_url, input={
+                    "prompt":  prompt, 
+                    "system_prompt": system_prompt,
+                    "max_new_tokens": 200})
+            answer = ''.join(output)
+            answer = re.sub("\s+", " ", answer)
+        elif model_str == "llama-3-70b-meditron":
+            client = OpenAI(base_url="http://104.171.203.227:8000/v1", api_key="EMPTY")
+            # default values
+            temperature = 0.6
+            max_tokens = 1024
+            top_p = 0.9
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": prompt}]
+            #print(messages)
+
+            response = client.chat.completions.create(model="llama-3-70b-meditron", messages=messages, temperature=temperature, top_p=top_p, max_tokens=max_tokens)
+            answer = response.choices[0].message.content
+
+        elif "HF_" in model_str:
+            input_text = system_prompt + prompt 
+            #if self.pipe is None:
+            #    self.pipe = load_huggingface_model(self.backend.replace("HF_", ""))
+            raise Exception("Sorry, fixing TODO :3") #inference_huggingface(input_text, self.pipe)
+        return answer
         
-        except Exception as e:
-            time.sleep(timeout)
-            continue
+        # except Exception as e:
+        #     print("Error: ", e)
+        #     #time.sleep(timeout)
+        #     continue
     raise Exception("Max retries: timeout")
 
 
@@ -597,7 +611,7 @@ def main(api_key, replicate_api_key, inf_type, doctor_bias, patient_bias, doctor
         pipe = load_huggingface_model(moderator_llm.replace("HF_", ""))
     else:
         pipe = None
-    if num_scenarios is None: num_scenarios = scenario_loader.num_scenarios
+
     for _scenario_id in range(0, min(num_scenarios, scenario_loader.num_scenarios)):
         total_presents += 1
         pi_dialogue = str()
@@ -672,7 +686,7 @@ if __name__ == "__main__":
     parser.add_argument('--moderator_llm', type=str, default='gpt4')
     parser.add_argument('--agent_dataset', type=str, default='MedQA') # MedQA, MIMICIV or NEJM
     parser.add_argument('--doctor_image_request', type=bool, default=False) # whether images must be requested or are provided
-    parser.add_argument('--num_scenarios', type=int, default=None, required=False, help='Number of scenarios to simulate')
+    parser.add_argument('--num_scenarios', type=int, default=15, required=False, help='Number of scenarios to simulate')
     parser.add_argument('--total_inferences', type=int, default=20, required=False, help='Number of inferences between patient and doctor')
     parser.add_argument('--anthropic_api_key', type=str, default=None, required=False, help='Anthropic API key for Claude 3.5 Sonnet')
     
