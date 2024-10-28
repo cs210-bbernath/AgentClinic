@@ -1,0 +1,2696 @@
+[
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and provide reassurance to a pediatric patient presenting with dizziness and anxiety about their health.",
+            "Patient_Actor": {
+                "Demographics": "10-year-old female",
+                "History": "The patient was brought in by her mother who reports that her daughter woke up this morning feeling like the whole room was spinning. The patient describes feeling dizzy and unsteady, especially when moving around, but feels better when sitting or lying still. She also feels nauseous but has not vomited. The patient's mother mentions she has been more anxious about her health recently, especially after a classmate was hospitalized for an unrelated condition.",
+                "Symptoms": {
+                    "Primary_Symptom": "Dizziness and spinning sensation",
+                    "Secondary_Symptoms": [
+                        "Nausea without vomiting",
+                        "Unsteady walking",
+                        "Anxiety about health",
+                        "No headache",
+                        "No fever"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical or surgical history. Up to date on vaccinations.",
+                "Social_History": "Lives with parents and a younger brother. Active in school, enjoys gymnastics. No exposure to tobacco or known toxins.",
+                "Review_of_Systems": "Denies headache, visual changes, hearing loss, chest pain, or palpitations."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.0\u00b0F)",
+                    "Blood_Pressure": "102/68 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Neurological_Examination": {
+                    "Cranial_Nerves": "Intact, no nystagmus observed",
+                    "Balance": "Mild unsteadiness on tandem walking",
+                    "Coordination": "Normal finger-to-nose test"
+                }
+            },
+            "Test_Results": {
+                "Audiometry": {
+                    "Findings": "Normal hearing thresholds"
+                },
+                "Vestibular_Function_Tests": {
+                    "Findings": "Positive Dix-Hallpike maneuver suggesting BPPV"
+                }
+            },
+            "Correct_Diagnosis": "Benign Paroxysmal Positional Vertigo (BPPV)"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and develop a management plan for a pediatric patient with chronic diarrhea and associated complications.",
+            "Patient_Actor": {
+                "Demographics": "1-year-old male",
+                "History": "The child has been experiencing frequent diarrhea, approximately 5-6 times a day, for over a week. Recently, the frequency has increased to 7 times a day. The stools are watery with green stringy bits. No recent travel or changes in diet.",
+                "Symptoms": {
+                    "Primary_Symptom": "Frequent watery diarrhea",
+                    "Secondary_Symptoms": [
+                        "Severe nappy rash",
+                        "No fever",
+                        "Normal appetite"
+                    ]
+                },
+                "Past_Medical_History": "Born full term, no significant neonatal history. Has had previous episodes of mild diaper rash without diarrhea.",
+                "Social_History": "Lives with both parents in an urban area. No siblings. Parents both work full-time; child attends daycare.",
+                "Review_of_Systems": "Denies vomiting, dehydration symptoms such as dry mouth or decreased urination."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98\u00b0F)",
+                    "Heart_Rate": "110 bpm",
+                    "Respiratory_Rate": "24 breaths/min",
+                    "Blood_Pressure": "Not typically measured in this age group"
+                },
+                "Skin_Examination": {
+                    "Inspection": "Severe diaper rash with erythema and some excoriations in the diaper area",
+                    "Hydration_Status": "Well-hydrated, no sunken eyes or decreased skin turgor"
+                }
+            },
+            "Test_Results": {
+                "Stool_Ova_and_Parasites": {
+                    "Findings": "Negative"
+                },
+                "Stool_Culture": {
+                    "Findings": "Negative for bacterial pathogens"
+                }
+            },
+            "Correct_Diagnosis": "Viral gastroenteritis with secondary diaper dermatitis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and create a rehabilitation plan for a pediatric patient with cerebral palsy presenting with mobility challenges.",
+            "Patient_Actor": {
+                "Demographics": "10-year-old female",
+                "History": "The patient was diagnosed with cerebral palsy at the age of 2. She has been attending physical therapy sessions regularly to improve her mobility and coordination. Her parents report that she has recently been struggling with increased muscle stiffness and difficulty in maintaining balance, especially when walking on uneven surfaces. She uses a walker for longer distances.",
+                "Symptoms": {
+                    "Primary_Symptom": "Increased muscle stiffness and balance difficulties",
+                    "Secondary_Symptoms": [
+                        "Difficulty walking on uneven surfaces",
+                        "Fatigue after physical activity",
+                        "Occasional falls"
+                    ]
+                },
+                "Past_Medical_History": "Diagnosed with cerebral palsy at age 2. No other significant medical history.",
+                "Social_History": "Lives with parents and younger brother. Attends school and participates in adapted physical education classes. No exposure to tobacco or alcohol.",
+                "Review_of_Systems": "No recent illnesses or changes in appetite. Denies pain other than muscle stiffness."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "90 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Mild muscle atrophy in lower extremities",
+                    "Palpation": "Increased tone in the lower extremity muscles",
+                    "Range_of_Motion": "Reduced range of motion in ankles and knees",
+                    "Gait": "Spastic gait pattern observed, uses walker for support",
+                    "Balance Tests": "Difficulty with tandem walking and single-leg stance"
+                }
+            },
+            "Test_Results": {
+                "Gait_Analysis": {
+                    "Findings": "Spastic diplegia pattern with increased muscle tone in lower limbs"
+                }
+            },
+            "Correct_Diagnosis": "Cerebral Palsy with spastic diplegia"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the patient with a painful lump under the nipple and significant abdominal pain limiting food intake.",
+            "Patient_Actor": {
+                "Demographics": "45-year-old male, originally from Mexico",
+                "History": "The patient reports noticing a painful lump under his left nipple approximately three weeks ago, which has gradually become more tender. Additionally, he has been experiencing severe stomach pain that starts after eating, causing him to feel full almost immediately and resulting in significant weight loss due to reduced food intake.",
+                "Symptoms": {
+                    "Primary_Symptom": "Painful lump under left nipple",
+                    "Secondary_Symptoms": [
+                        "Severe stomach pain post-eating",
+                        "Immediate fullness after eating",
+                        "Significant weight loss in the past month"
+                    ]
+                },
+                "Past_Medical_History": "Previously healthy, no history of surgeries or major illnesses.",
+                "Social_History": "Works as a construction worker. Lives with his wife and two children. No history of smoking or alcohol use. Limited English proficiency, primary language is Spanish.",
+                "Review_of_Systems": "Denies fever, cough, or changes in bowel habits. No recent travel history."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "130/80 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "General_Examination": {
+                    "Inspection": "Visible lump under left nipple, approximately 2.5 cm in diameter",
+                    "Palpation": "Tender lump to touch, no discharge",
+                    "Abdominal_Examination": "Mild epigastric tenderness, no guarding or rebound tenderness"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound_Breast": {
+                    "Findings": "Solid mass under left nipple suggestive of gynecomastia"
+                },
+                "Upper_GI_Endoscopy": {
+                    "Findings": "Gastric ulcer at the pylorus with evidence of inflammation"
+                }
+            },
+            "Correct_Diagnosis": "Gynecomastia and gastric ulcer"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and counsel a pregnant patient concerned about her health and the baby's well-being.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female, 24 weeks pregnant",
+                "History": "The patient is in her second trimester of pregnancy and has been experiencing fatigue and mild shortness of breath for the past few weeks. She is concerned about the safety of any medications she might need and the health of her developing baby. There have been no complications in the pregnancy thus far.",
+                "Symptoms": {
+                    "Primary_Symptom": "Fatigue",
+                    "Secondary_Symptoms": [
+                        "Mild shortness of breath",
+                        "Occasional headaches",
+                        "Increased sensitivity to heat"
+                    ]
+                },
+                "Past_Medical_History": "History of mild iron-deficiency anemia, managed with over-the-counter iron supplements. No history of chronic illnesses or surgeries.",
+                "Social_History": "Works as a school teacher, lives with her husband. Does not smoke or consume alcohol. Engages in light exercise such as walking.",
+                "Review_of_Systems": "Denies chest pain, palpitations, or any gastrointestinal issues."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "88/min",
+                    "Respirations": "20/min",
+                    "Blood_Pressure": "112/70 mm Hg",
+                    "Oxygen_Saturation": "97% on room air",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "General_Examination": {
+                    "Appearance": "Alert, cooperative, and in no acute distress",
+                    "Skin": "No cyanosis or pallor, normal turgor"
+                },
+                "Cardiovascular_Examination": {
+                    "Heart_Sounds": "Normal S1 and S2, no murmurs"
+                },
+                "Respiratory_Examination": {
+                    "Auscultation": "Clear breath sounds bilaterally"
+                }
+            },
+            "Test_Results": {
+                "Blood_Work": {
+                    "Hemoglobin": "11.0 g/dL (slightly low, consistent with mild anemia)",
+                    "Hematocrit": "33%",
+                    "White_Blood_Cell_Count": "7,200 cells/mcL"
+                },
+                "Ultrasound": {
+                    "Findings": "Normal fetal growth and development, amniotic fluid levels within normal limits"
+                }
+            },
+            "Correct_Diagnosis": "Mild iron-deficiency anemia in pregnancy"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Consult with the parent about their child's hearing loss and evaluate the suitability for a cochlear implant.",
+            "Patient_Actor": {
+                "Demographics": "3-year-old female",
+                "History": "The child was born at term with no complications. Passed the initial newborn hearing screening. However, the parents noticed a lack of response to sounds and delayed speech development around 18 months of age. The child has had three episodes of otitis media in the past year, but no family history of hearing loss.",
+                "Symptoms": {
+                    "Primary_Symptom": "Bilateral moderate to severe sensorineural hearing loss",
+                    "Secondary_Symptoms": [
+                        "Delayed speech development",
+                        "Limited response to auditory stimuli"
+                    ]
+                },
+                "Past_Medical_History": "Frequent ear infections (otitis media) over the past year.",
+                "Social_History": "The child lives with both parents and an older sibling. No exposure to tobacco smoke.",
+                "Review_of_Systems": "No history of vertigo, tinnitus, or balance problems."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "90/55 mmHg",
+                    "Heart_Rate": "100 bpm",
+                    "Respiratory_Rate": "24 breaths/min"
+                },
+                "Ear_Examination": {
+                    "Otoscopy": "Tympanic membranes appear intact with slight retraction"
+                }
+            },
+            "Test_Results": {
+                "Audiometry": {
+                    "Findings": "Moderate to severe sensorineural hearing loss bilaterally"
+                },
+                "ABR_Test": {
+                    "Findings": "Delayed waveforms consistent with sensorineural hearing loss"
+                },
+                "OAE_Testing": {
+                    "Findings": "Absent otoacoustic emissions in both ears"
+                }
+            },
+            "Correct_Diagnosis": "Bilateral sensorineural hearing loss, likely candidate for cochlear implants"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Consult with the parent regarding their child's persistent cough and provide an evaluation and management plan.",
+            "Patient_Actor": {
+                "Demographics": "12-year-old female",
+                "History": "The child has been experiencing a persistent dry cough for the past 6 weeks. The cough is more pronounced at night and occasionally during physical activities. There is no history of recent travel or significant environmental exposures known to the parents. The child had an episode of mild respiratory infection 3 months ago that resolved without complications.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent dry cough",
+                    "Secondary_Symptoms": [
+                        "Cough worsens at night",
+                        "Occasional cough during physical activities",
+                        "No fever or weight loss"
+                    ]
+                },
+                "Past_Medical_History": "History of mild asthma diagnosed at age 8, managed with an as-needed albuterol inhaler. No significant hospitalizations or surgeries.",
+                "Social_History": "Lives with both parents and a younger sibling in a smoke-free home. No pets. Active in school sports.",
+                "Review_of_Systems": "Denies chest pain, wheezing, or shortness of breath. No gastrointestinal symptoms or skin rashes."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "105/70 mmHg",
+                    "Heart_Rate": "85 bpm",
+                    "Respiratory_Rate": "20 breaths/min",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Respiratory_Examination": {
+                    "Inspection": "No signs of respiratory distress",
+                    "Palpation": "Normal chest expansion",
+                    "Percussion": "Resonant throughout",
+                    "Auscultation": "Occasional expiratory wheeze in bilateral lower lung fields"
+                }
+            },
+            "Test_Results": {
+                "Chest_X-ray": {
+                    "Findings": "No significant abnormalities"
+                },
+                "Spirometry": {
+                    "FEV1_FVC_Ratio": "70%",
+                    "FEV1": "75% predicted"
+                }
+            },
+            "Correct_Diagnosis": "Mild persistent asthma"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and manage a patient presenting with a new, painless swelling on the leg, and evaluate for any complications related to previous cardiovascular surgery.",
+            "Patient_Actor": {
+                "Demographics": "69-year-old male",
+                "History": "The patient reports noticing a sudden bump about the size of a half dollar on his left leg just below the knee while working on a home project. The initial sensation was a sting, but it is now painless. He had a triple bypass surgery 7 years ago and has no other significant recent medical events.",
+                "Symptoms": {
+                    "Primary_Symptom": "Painless swelling on the left leg below the knee",
+                    "Secondary_Symptoms": [
+                        "Initial stinging sensation",
+                        "No pain currently"
+                    ]
+                },
+                "Past_Medical_History": "History of coronary artery disease, underwent triple bypass surgery 7 years ago. Currently on medication for hypertension and cholesterol management.",
+                "Social_History": "Retired, non-smoker, occasional consumption of alcohol. Lives with his wife and leads an active lifestyle, participating in light home maintenance activities.",
+                "Review_of_Systems": "Denies fever, chills, redness, or systemic symptoms. No dyspnea or chest pain reported."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "130/85 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Visible swelling approximately 3 cm in diameter on the left leg below the knee, no redness or bruising",
+                    "Palpation": "Non-tender, soft consistency, no fluctuance",
+                    "Range_of_Motion": "Full range of motion in the knee and ankle",
+                    "Special_Tests": "Negative for Homan's sign"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound_Left_Leg": {
+                    "Findings": "Subcutaneous hematoma with no evidence of deep vein thrombosis"
+                }
+            },
+            "Correct_Diagnosis": "Subcutaneous hematoma"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a pediatric patient with a prolonged cough and persistent phlegm, considering the possibility of an underlying allergy or infection.",
+            "Patient_Actor": {
+                "Demographics": "9-year-old male",
+                "History": "The patient presented with cough and flu-like symptoms three months ago. The initial symptoms improved but the chesty cough and green phlegm have persisted. The mother reports no wheezing or shortness of breath. The patient has only had antibiotics once before, indicating generally good health.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent chesty cough",
+                    "Secondary_Symptoms": [
+                        "Coughing up green phlegm",
+                        "No wheezing",
+                        "No shortness of breath"
+                    ]
+                },
+                "Past_Medical_History": "Previously healthy with no significant medical issues. Only one prior episode requiring antibiotics.",
+                "Social_History": "Lives with parents and one sibling. Active and participates in school sports. No exposure to tobacco smoke at home.",
+                "Review_of_Systems": "Denies fever, weight loss, night sweats, or recent travel."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "105/70 mmHg",
+                    "Heart_Rate": "90 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Respiratory_Examination": {
+                    "Inspection": "No visible distress or use of accessory muscles",
+                    "Palpation": "No tenderness over the chest",
+                    "Percussion": "Resonant throughout",
+                    "Auscultation": "Scattered rhonchi, no wheezes or crackles"
+                }
+            },
+            "Test_Results": {
+                "Chest_X-ray": {
+                    "Findings": "Mild peribronchial thickening, no consolidation"
+                },
+                "Complete_Blood_Count": {
+                    "Findings": "Mildly elevated eosinophils"
+                },
+                "Sputum_Culture": {
+                    "Findings": "No growth of pathogenic bacteria"
+                }
+            },
+            "Correct_Diagnosis": "Allergic bronchitis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and address the complications experienced by the patient following recent abdominal surgery.",
+            "Patient_Actor": {
+                "Demographics": "34-year-old female",
+                "History": "The patient underwent laparoscopic cholecystectomy three weeks ago. She initially experienced normal post-operative recovery, but over the past week, she has developed increasing pain in the upper right quadrant of her abdomen, nausea, and occasional vomiting. She reports that the pain worsens after eating and is accompanied by a low-grade fever.",
+                "Symptoms": {
+                    "Primary_Symptom": "Upper right quadrant abdominal pain",
+                    "Secondary_Symptoms": [
+                        "Nausea and occasional vomiting",
+                        "Low-grade fever",
+                        "Pain worsens after eating"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No history of allergies or chronic illnesses.",
+                "Social_History": "Non-smoker, consumes alcohol socially. Lives with a partner and works as a graphic designer. Has no children.",
+                "Review_of_Systems": "Denies chest pain, shortness of breath, or changes in bowel habits. No urinary symptoms reported."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "38.2\u00b0C (100.8\u00b0F)",
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "92 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "Surgical wounds healing well without signs of infection",
+                    "Palpation": "Tenderness in the right upper quadrant, no rebound tenderness",
+                    "Percussion": "Normal liver span",
+                    "Auscultation": "Normal bowel sounds"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound_Abdomen": {
+                    "Findings": "Fluid collection in the gallbladder fossa suggestive of a bile leak"
+                },
+                "Blood_Work": {
+                    "WBC_Count": "14,000/mmu00b3 indicating leukocytosis",
+                    "Liver_Function_Tests": "Mildly elevated bilirubin and alkaline phosphatase"
+                }
+            },
+            "Correct_Diagnosis": "Bile leak post-cholecystectomy"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a patient with sleep disturbances potentially linked to mental health issues.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female",
+                "History": "The patient reports persistent sleep disturbances over the past six months. She describes having difficulty falling asleep and staying asleep, waking up feeling unrefreshed. She notes increased stress at work and some personal life changes, including a recent breakup. She denies any new medications except for a recent use of leotensin, which was discontinued due to an allergic reaction.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent sleep disturbances",
+                    "Secondary_Symptoms": [
+                        "Difficulty falling asleep",
+                        "Frequent awakenings during the night",
+                        "Feeling unrefreshed in the morning",
+                        "Increased stress at work",
+                        "Recent personal life changes"
+                    ]
+                },
+                "Past_Medical_History": "Allergic reaction to leotensin characterized by red skin lesions with a purple center. No other significant medical history.",
+                "Social_History": "Works as a dental hygienist, lives alone, recently ended a long-term relationship. Denies smoking or illicit drug use. Drinks alcohol socially, approximately 1-2 glasses of wine per week.",
+                "Review_of_Systems": "Denies any recent weight changes, appetite changes, chest pain, or palpitations. Reports feeling anxious and overwhelmed."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "General_Examination": {
+                    "Appearance": "Alert and oriented, appears slightly anxious",
+                    "Skin": "Fading red skin lesions with a purple center on arms and torso"
+                }
+            },
+            "Test_Results": {
+                "Polysomnography": {
+                    "Findings": "Reduced sleep efficiency, increased sleep latency, frequent nighttime awakenings"
+                },
+                "Psychiatric_Evaluation": {
+                    "Findings": "Elevated stress levels, mild symptoms of anxiety, no major depressive disorder"
+                }
+            },
+            "Correct_Diagnosis": "Insomnia related to anxiety and stress"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Discuss pain management and rehabilitation strategies for a terminal cancer patient experiencing severe pain and functional limitations.",
+            "Patient_Actor": {
+                "Demographics": "53-year-old female",
+                "History": "The patient was diagnosed with metastatic breast cancer 18 months ago. She has been undergoing chemotherapy and radiation therapy. Recently, she has been experiencing severe lower back pain that radiates to the groin and down the right thigh.",
+                "Symptoms": {
+                    "Primary_Symptom": "Severe lower back pain radiating to the groin and right thigh",
+                    "Secondary_Symptoms": [
+                        "Pain intensifies with movement",
+                        "Difficulty walking due to pain",
+                        "Occasional numbness in the right leg"
+                    ]
+                },
+                "Past_Medical_History": "Metastatic breast cancer, diagnosed 18 months ago. Previous episodes of urinary tract infections.",
+                "Social_History": "Lives alone, with support from adult children. Retired teacher. Non-smoker and occasional wine drinker.",
+                "Review_of_Systems": "Denies cough, fever, or significant weight loss beyond expected from cancer treatment. Reports decreased appetite and fatigue."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "130/85 mmHg",
+                    "Heart_Rate": "88 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "No visible deformity in the spine",
+                    "Palpation": "Tenderness over the lumbar region",
+                    "Range_of_Motion": "Limited due to pain, especially with forward flexion",
+                    "Neurological": "Diminished sensation in the right thigh, slightly reduced strength in the right leg"
+                }
+            },
+            "Test_Results": {
+                "CT_Scan_Abdomen_Pelvis": {
+                    "Findings": "Evidence of metastatic lesions in the lumbar vertebrae and pelvic bones"
+                },
+                "Bone_Scan": {
+                    "Findings": "Increased uptake in the lumbar spine and pelvis consistent with metastatic disease"
+                }
+            },
+            "Correct_Diagnosis": "Metastatic spinal and pelvic bone lesions secondary to breast cancer"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and provide ergonomic and medical advice for a patient with a cognitive disability experiencing work-related stress and physical discomfort.",
+            "Patient_Actor": {
+                "Demographics": "35-year-old female",
+                "History": "The patient is employed as a data entry clerk and reports increasing difficulty concentrating and maintaining productivity. She experiences frequent headaches and neck pain after long periods at her desk. The patient has been diagnosed with Attention Deficit Hyperactivity Disorder (ADHD) since childhood and has recently noticed these symptoms impacting her work performance.",
+                "Symptoms": {
+                    "Primary_Symptom": "Difficulty concentrating and frequent headaches",
+                    "Secondary_Symptoms": [
+                        "Neck pain",
+                        "Increased work-related stress",
+                        "Intermittent restlessness"
+                    ]
+                },
+                "Past_Medical_History": "Diagnosed with ADHD in childhood. No history of major surgeries. Occasional migraine episodes managed with over-the-counter medication.",
+                "Social_History": "Works full-time in an office setting. Lives alone, exercises irregularly. Non-smoker and consumes alcohol socially.",
+                "Review_of_Systems": "Denies chest pain, palpitations, or gastrointestinal issues. Reports occasional insomnia and fatigue."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "72 bpm",
+                    "Respirations": "16/min",
+                    "Blood_Pressure": "120/80 mm Hg",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Normal posture but slight forward head posture noted",
+                    "Palpation": "Tenderness in the cervical paraspinal muscles",
+                    "Range_of_Motion": "Limited range of motion in the cervical spine due to discomfort"
+                }
+            },
+            "Test_Results": {
+                "Cognitive_Assessment": {
+                    "Findings": "Mild deficits in attention and executive function consistent with ADHD"
+                },
+                "Ergonomic_Assessment": {
+                    "Findings": "Workstation setup contributes to poor posture and physical discomfort"
+                }
+            },
+            "Correct_Diagnosis": "Work-related stress and physical discomfort exacerbated by ADHD"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the patient presenting with an allergic reaction.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old female",
+                "History": "The patient reports experiencing hives and difficulty breathing approximately 30 minutes after consuming shellfish at a restaurant. She has a known allergy to shellfish but inadvertently consumed it due to a misunderstanding about the dish ingredients. This is her second allergic reaction, with the first occurring two years ago.",
+                "Symptoms": {
+                    "Primary_Symptom": "Hives and difficulty breathing",
+                    "Secondary_Symptoms": [
+                        "Swelling of lips and throat",
+                        "Itchy skin",
+                        "Mild abdominal discomfort"
+                    ]
+                },
+                "Past_Medical_History": "History of pulmonary tuberculosis treated successfully six years ago. Known shellfish allergy.",
+                "Social_History": "Married, no children. Works as a graphic designer. No smoking or alcohol use. Regular exercise routine.",
+                "Review_of_Systems": "Denies fever, recent infections, or other systemic symptoms. Reports regular menstrual cycles now after previously having irregular periods."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.2\u00b0C (98.9\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "95 bpm",
+                    "Respiratory_Rate": "22 breaths/min",
+                    "Oxygen_Saturation": "94% on room air"
+                },
+                "Skin_Examination": {
+                    "Inspection": "Generalized urticarial rash over arms, chest, and neck",
+                    "Palpation": "Warm and raised welts"
+                },
+                "Respiratory_Examination": {
+                    "Auscultation": "Wheezing heard bilaterally"
+                }
+            },
+            "Test_Results": {
+                "Allergy Testing": {
+                    "Findings": "Positive IgE levels for shellfish allergens"
+                },
+                "Chest_X-ray": {
+                    "Findings": "No acute findings"
+                }
+            },
+            "Correct_Diagnosis": "Acute allergic reaction to shellfish (Anaphylaxis)"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and diagnose the elderly patient presenting with foot pain and bruising after a recent injury.",
+            "Patient_Actor": {
+                "Demographics": "70-year-old female",
+                "History": "The patient reports sustaining an injury to her right foot last Friday after stepping into a trough while walking on the lawn. She experienced immediate pain and swelling, applied ice for the first 24 hours, and has noticed spreading bruising since then. No prior history of similar injuries.",
+                "Symptoms": {
+                    "Primary_Symptom": "Pain on the outside of the right foot",
+                    "Secondary_Symptoms": [
+                        "Swelling of the right foot",
+                        "Bruising extending to the toes",
+                        "No pain in the ankle"
+                    ]
+                },
+                "Past_Medical_History": "Hypertension for the past 15 years, well-managed with lisinopril. Osteoarthritis in knees diagnosed 5 years ago.",
+                "Social_History": "Retired school teacher, lives alone, non-smoker, drinks wine occasionally.",
+                "Review_of_Systems": "Denies fever, chills, or recent illness. No changes in weight or appetite."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.0\u00b0F)",
+                    "Blood_Pressure": "130/85 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Swelling and bruising noted on the lateral aspect of the right foot and toes",
+                    "Palpation": "Tenderness on the lateral side of the right foot",
+                    "Range_of_Motion": "Limited due to pain, particularly in the lateral foot",
+                    "Special_Tests": "Negative for anterior drawer and talar tilt tests, suggesting no ankle instability"
+                }
+            },
+            "Test_Results": {
+                "X-ray_Right_Foot": {
+                    "Findings": "No evidence of fracture; soft tissue swelling observed"
+                }
+            },
+            "Correct_Diagnosis": "Right foot sprain"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and provide reassurance to a pregnant patient concerned about her recent H. pylori diagnosis and its implications for her health and the baby's well-being.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female, 20 weeks pregnant",
+                "History": "The patient was recently diagnosed with Helicobacter pylori infection following symptoms of persistent indigestion and mild abdominal discomfort. She is currently on a prescribed treatment regimen of clarithromycin, amoxicillin, and omeprazole. The patient is concerned about the effect of the medication and the infection on her pregnancy and the baby's health.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent indigestion",
+                    "Secondary_Symptoms": [
+                        "Mild abdominal discomfort",
+                        "Occasional nausea"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. This is her second pregnancy; the first was uncomplicated.",
+                "Social_History": "Non-smoker, no alcohol use. Works as a school teacher. Lives with her husband and 4-year-old son.",
+                "Review_of_Systems": "Denies fever, vomiting, weight loss, or changes in bowel habits. No history of allergies."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "82/min",
+                    "Respirations": "16/min",
+                    "Blood_Pressure": "110/70 mm Hg",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "No visible distention",
+                    "Palpation": "Mild tenderness in the epigastric region, no guarding or rebound",
+                    "Auscultation": "Normal bowel sounds"
+                }
+            },
+            "Test_Results": {
+                "Urea_Breath_Test": {
+                    "Findings": "Positive for H. pylori"
+                },
+                "Ultrasound_Abdomen": {
+                    "Findings": "Normal, no evidence of peptic ulcer or other abnormalities"
+                }
+            },
+            "Correct_Diagnosis": "H. pylori infection during pregnancy"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the patient presenting with chronic vertigo and balance issues, considering possible correlations with medication use and sinus problems.",
+            "Patient_Actor": {
+                "Demographics": "40-year-old female",
+                "History": "The patient has a long-standing history of chronic vertigo and significant balance issues, exacerbated by chronic sinus problems. Recently, she noticed an increase in episodes of dizziness, especially when getting up quickly, and mentions that her vertigo sometimes leads to nausea. She is currently on multiple medications, including Valium 5 mg four times a day for vertigo, fluticasone nasal spray once daily for sinus issues, QVAR for wheezing, and Claritin for allergies. She also performs sinus rinses as needed.",
+                "Symptoms": {
+                    "Primary_Symptom": "Chronic vertigo and balance issues",
+                    "Secondary_Symptoms": [
+                        "Increased dizziness upon standing",
+                        "Nausea accompanying vertigo",
+                        "Chronic sinus congestion"
+                    ]
+                },
+                "Past_Medical_History": "Chronic vertigo and insomnia, chronic sinusitis, and asthma managed with inhalers.",
+                "Social_History": "Non-smoker, rarely drinks alcohol, and is currently engaged in a gradual exercise program to address weight management.",
+                "Review_of_Systems": "Denies recent ear infections or significant hearing loss. Reports occasional headaches, but no recent changes in vision."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "130/85 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "20 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "Neurological_Examination": {
+                    "Romberg Test": "Positive, increased sway with eyes closed",
+                    "Dix-Hallpike Maneuver": "Elicits mild vertigo, no nystagmus observed",
+                    "Gait": "Unsteady, with a slight tendency to veer to the left"
+                }
+            },
+            "Test_Results": {
+                "Audiometry": {
+                    "Findings": "Normal hearing thresholds bilaterally"
+                },
+                "VNG (Videonystagmography)": {
+                    "Findings": "Abnormal caloric test indicating reduced vestibular function on the left side"
+                },
+                "Blood Tests": {
+                    "ALT": "60 U/L",
+                    "Triglycerides": "198 mg/dL"
+                }
+            },
+            "Correct_Diagnosis": "Vestibular dysfunction potentially exacerbated by sinus issues and medication side effects"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and provide appropriate palliative care support for a patient experiencing chronic pelvic pain and language barriers.",
+            "Patient_Actor": {
+                "Demographics": "26-year-old female, originally from Mexico",
+                "History": "The patient underwent surgery 5 months ago for the removal of scar tissue and adhesions. Recently, her gynecologist discovered a cyst on her right ovary. She experiences severe cervical pain during intercourse, followed by abdominal cramps that can lead to lightheadedness. She also reports abdominal and rectal pain before and during bowel movements, as well as abdominal pain during urination.",
+                "Symptoms": {
+                    "Primary_Symptom": "Chronic pelvic and abdominal pain",
+                    "Secondary_Symptoms": [
+                        "Severe cervical pain during intercourse",
+                        "Lightheadedness after intercourse",
+                        "Abdominal and rectal pain during bowel movements",
+                        "Abdominal pain during urination"
+                    ]
+                },
+                "Past_Medical_History": "Surgery for scar tissue and adhesion removal 5 months ago.",
+                "Social_History": "Lives with her husband, with whom she has been married for 3 years. She does not smoke or consume alcohol. She works part-time as a cashier and speaks limited English, primarily communicating in Spanish.",
+                "Review_of_Systems": "Denies fever, weight loss, or changes in appetite. Reports occasional nausea without vomiting."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.9\u00b0C (98.4\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "75 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "No distention or visible masses",
+                    "Palpation": "Tenderness in the lower abdomen, particularly in the right lower quadrant",
+                    "Percussion": "Mild tympany over the lower abdomen",
+                    "Auscultation": "Normal bowel sounds"
+                }
+            },
+            "Test_Results": {
+                "Pelvic_Ultrasound": {
+                    "Findings": "Presence of a right ovarian cyst measuring 3 cm. No free fluid in the pelvis."
+                },
+                "CT_Abdomen": {
+                    "Findings": "Reformation of pelvic adhesions and mild inflammatory changes suggestive of Pelvic Inflammatory Disease (PID)."
+                }
+            },
+            "Correct_Diagnosis": "Pelvic Inflammatory Disease (PID) with recurrent adhesions and ovarian cyst."
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and diagnose the patient experiencing an allergic reaction potentially related to footwear or materials used in sports equipment.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old male",
+                "History": "Patient is an avid runner and has recently started using a new brand of running shoes. He reports developing an itchy rash on his feet and lower legs a few hours after his last three runs. No changes in laundry detergent or body wash, and no known food allergies.",
+                "Symptoms": {
+                    "Primary_Symptom": "Itchy rash on feet and lower legs",
+                    "Secondary_Symptoms": [
+                        "Redness and mild swelling in affected areas",
+                        "Increased itching after sweating during runs",
+                        "No systemic symptoms or respiratory issues"
+                    ]
+                },
+                "Past_Medical_History": "Mild seasonal allergies managed with over-the-counter antihistamines. No other significant medical history.",
+                "Social_History": "Non-smoker, occasional alcohol use. Works as a software engineer and runs about 30 miles per week for physical fitness.",
+                "Review_of_Systems": "Denies any fever, respiratory symptoms, or gastrointestinal issues. No recent changes in diet or environment."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "118/75 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Dermatological_Examination": {
+                    "Inspection": "Erythematous, papular rash on dorsal surfaces of feet and lateral aspects of lower legs",
+                    "Palpation": "Mild warmth and tenderness, no fluctuant areas or pus",
+                    "Special_Tests": "Scratch test shows welts in areas of rash"
+                }
+            },
+            "Test_Results": {
+                "Allergy_Patch_Test": {
+                    "Findings": "Positive reaction to rubber accelerators used in footwear"
+                }
+            },
+            "Correct_Diagnosis": "Contact dermatitis due to allergic reaction to materials in footwear"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and diagnose the patient presenting with voice changes and potential exposure to hazardous materials at work.",
+            "Patient_Actor": {
+                "Demographics": "45-year-old male",
+                "History": "The patient reports a 3-month history of persistent hoarseness and voice fatigue. He works in a chemical manufacturing plant and has been exposed to various industrial fumes. He denies recent upper respiratory infections but notes occasional throat irritation and a burning sensation in his chest when swallowing. Symptoms are worse at the end of the workday. He also reports frequent heartburn, especially at night.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent hoarseness",
+                    "Secondary_Symptoms": [
+                        "Voice fatigue",
+                        "Throat irritation",
+                        "Burning sensation in chest when swallowing",
+                        "Frequent heartburn, especially at night"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No prior surgeries.",
+                "Social_History": "Works in a chemical plant with exposure to fumes. Smokes half a pack of cigarettes daily for 20 years. Occasionally consumes alcohol on weekends.",
+                "Review_of_Systems": "Denies fever, weight loss, or significant changes in appetite."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.0\u00b0F)",
+                    "Blood_Pressure": "130/85 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Otolaryngological_Examination": {
+                    "Larynx_Inspection": "Mild erythema and edema of the vocal cords observed via laryngoscopy",
+                    "Palpation": "Tenderness over the larynx",
+                    "Voice_Quality": "Hoarse and breathy voice"
+                }
+            },
+            "Test_Results": {
+                "Laryngoscopy": {
+                    "Findings": "Erythema and edema of the vocal cords, no nodules or polyps"
+                },
+                "Esophageal_pH_Test": {
+                    "Result": "Abnormal acid exposure suggesting gastroesophageal reflux disease (GERD)"
+                }
+            },
+            "Correct_Diagnosis": "Laryngopharyngeal reflux (LPR) exacerbated by occupational exposure"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and plan pre-surgical nutritional management for a patient with recurrent upper abdominal pain post-cholecystectomy.",
+            "Patient_Actor": {
+                "Demographics": "45-year-old female",
+                "History": "The patient reports experiencing upper abdominal distress intermittently over the past 2 years following gallbladder surgery. Episodes occur every few months, typically after consuming fatty meals. In the past 6 days, she has experienced increased frequency of these episodes. She visited the emergency department multiple times where cardiac issues were ruled out. She is anxious about these episodes, fearing a heart attack each time.",
+                "Symptoms": {
+                    "Primary_Symptom": "Intermittent upper abdominal distress",
+                    "Secondary_Symptoms": [
+                        "Pain worsens after fatty meals",
+                        "Anxiety about potential heart issues",
+                        "Episodes of pain occurring more frequently in the past week"
+                    ]
+                },
+                "Past_Medical_History": "Cholecystectomy 2 years ago. No history of heart disease. No history of gastrointestinal ulcers.",
+                "Social_History": "Non-smoker. Consumes alcohol socially. Works as an accountant. Lives with her spouse and two teenage children.",
+                "Review_of_Systems": "Denies nausea, vomiting, changes in bowel habits, or significant weight loss."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "125/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "No visible distension or scars other than surgical",
+                    "Palpation": "Mild tenderness in the right upper quadrant",
+                    "Percussion": "Normal tympanic sounds",
+                    "Auscultation": "Normal bowel sounds"
+                }
+            },
+            "Test_Results": {
+                "CT_Abdomen": {
+                    "Findings": "No acute abnormalities; mild hepatic steatosis noted"
+                },
+                "MRCP": {
+                    "Findings": "No evidence of bile duct stones or obstruction"
+                },
+                "Upper_GI_Endoscopy": {
+                    "Findings": "No ulcers or malignancy; mild gastritis"
+                }
+            },
+            "Correct_Diagnosis": "Post-cholecystectomy syndrome with functional dyspepsia"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a pediatric patient with a pilonidal dimple and provide guidance on home care and follow-up.",
+            "Patient_Actor": {
+                "Demographics": "12-year-old male",
+                "History": "The patient's mother reports noticing a small hole at the top of her son's buttock crease about two weeks ago. There has been no pain or discharge, but she is concerned about possible infection. The child is active, participating in sports, and spends long hours sitting for school work and gaming.",
+                "Symptoms": {
+                    "Primary_Symptom": "Pilonidal dimple at the top of the buttock crease",
+                    "Secondary_Symptoms": [
+                        "No pain",
+                        "No discharge",
+                        "Occasionally itchy"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. Up-to-date with vaccinations.",
+                "Social_History": "Lives with parents and one younger sister. Active in soccer and spends considerable time sitting for online classes and video games.",
+                "Review_of_Systems": "Denies fever, weight loss, or recent illness."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "75 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Skin_Examination": {
+                    "Inspection": "Small dimple approximately the size of a dime at the top of the gluteal cleft",
+                    "Palpation": "No tenderness or warmth around the area",
+                    "Other": "No erythema or swelling noted"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound": {
+                    "Findings": "No abscess or fluid collection detected. Consistent with an uncomplicated pilonidal dimple."
+                }
+            },
+            "Correct_Diagnosis": "Pilonidal dimple"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Consult with a patient who is hesitant to share personal information regarding her fertility treatment and potential pregnancy.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female",
+                "History": "The patient is visiting the clinic for a consultation about her recent medication and possible pregnancy. She is planning to start in vitro fertilization (IVF) using intracytoplasmic sperm injection (ICSI) next month. Her gynecologist prescribed Primolut N from day 16 to day 25 of her cycle to regulate her periods. She is concerned about the potential effects of the medication if she has already conceived naturally in the current cycle.",
+                "Symptoms": {
+                    "Primary_Symptom": "Concern about medication's impact on potential pregnancy",
+                    "Secondary_Symptoms": [
+                        "Irregular menstrual cycles",
+                        "Mild anxiety regarding fertility treatment"
+                    ]
+                },
+                "Past_Medical_History": "History of polycystic ovary syndrome (PCOS) diagnosed 3 years ago. No significant surgical history.",
+                "Social_History": "Married, works as a graphic designer. Non-smoker, occasional wine drinker. Lives a sedentary lifestyle due to desk job.",
+                "Review_of_Systems": "Denies nausea, breast tenderness, fatigue, or other common early pregnancy symptoms. Reports normal bowel and bladder function."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "118/78 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "General_Examination": {
+                    "Appearance": "Well-nourished, appears anxious but in no acute distress",
+                    "Abdomen": "No tenderness or masses noted on palpation"
+                }
+            },
+            "Test_Results": {
+                "Urine_Pregnancy_Test": {
+                    "Result": "Pending"
+                },
+                "Pelvic_Ultrasound": {
+                    "Findings": "Normal uterine structure; presence of ovarian cysts consistent with PCOS"
+                }
+            },
+            "Correct_Diagnosis": "Consultation for medication safety during early pregnancy concern"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess the child presenting with persistent ear pain and hearing difficulties.",
+            "Patient_Actor": {
+                "Demographics": "5-year-old female",
+                "History": "The parent reports that the child has been complaining of ear pain in the right ear for the past two weeks. The pain seems to be worse at night and is accompanied by occasional tugging at the ear. The child has had difficulty hearing and often asks for things to be repeated. There is no history of recent fever or upper respiratory symptoms.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent ear pain in the right ear",
+                    "Secondary_Symptoms": [
+                        "Difficulty hearing",
+                        "Occasional tugging at the ear",
+                        "No fever",
+                        "No recent upper respiratory symptoms"
+                    ]
+                },
+                "Past_Medical_History": "History of recurrent otitis media, last episode 6 months ago. No known allergies.",
+                "Social_History": "The child attends kindergarten, lives with parents and a younger sibling. No exposure to tobacco smoke at home.",
+                "Review_of_Systems": "Denies nasal congestion, sore throat, or dizziness. No changes in appetite or weight."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "NA",
+                    "Heart_Rate": "95 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Otolaryngological_Examination": {
+                    "Inspection": "Right tympanic membrane is erythematous and bulging with reduced mobility on pneumatic otoscopy",
+                    "Palpation": "Tenderness noted on palpation of the right mastoid process",
+                    "Hearing_Test": "Weber test lateralizes to the right ear"
+                }
+            },
+            "Test_Results": {
+                "Audiometry": {
+                    "Findings": "Conductive hearing loss in the right ear"
+                }
+            },
+            "Correct_Diagnosis": "Acute otitis media"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a patient with a chronic cardiac condition and a significant family history of heart disease.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old male",
+                "History": "The patient reports experiencing chest pains for the past 6 months. The pain is described as a constant, dull ache that occasionally radiates to the back. The episodes occur both at rest and during physical activity, such as jogging or climbing stairs. The patient sometimes wakes up with these chest pains. There is a notable family history of early-onset heart disease; the patient's grandfather died of a heart attack at age 26, the mother had a heart attack at age 45, and the maternal grandmother also had a heart attack.",
+                "Symptoms": {
+                    "Primary_Symptom": "Constant chest pain radiating to the back",
+                    "Secondary_Symptoms": [
+                        "Chest pain occurs at rest and during exertion",
+                        "Occasional waking with chest pain",
+                        "Family history of early-onset heart disease"
+                    ]
+                },
+                "Past_Medical_History": "No previous diagnoses of heart disease. Mild hyperlipidemia managed with diet.",
+                "Social_History": "Non-smoker, drinks alcohol occasionally. Works a desk job with limited physical activity.",
+                "Review_of_Systems": "Denies palpitations, shortness of breath, syncope, or nausea. Occasional headaches."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "132/84 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "Cardiovascular_Examination": {
+                    "Inspection": "No visible abnormalities",
+                    "Palpation": "No heaves or thrills",
+                    "Auscultation": "Normal S1 and S2, no murmurs or extra heart sounds"
+                }
+            },
+            "Test_Results": {
+                "ECG": {
+                    "Findings": "Normal sinus rhythm, no ST segment changes"
+                },
+                "Echocardiogram": {
+                    "Findings": "Normal left ventricular function, no wall motion abnormalities"
+                },
+                "Stress_Test": {
+                    "Findings": "Mild ischemia during peak exercise"
+                }
+            },
+            "Correct_Diagnosis": "Stable Angina Pectoris"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and diagnose the patient presenting with a sports-related shoulder injury.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old male",
+                "History": "The patient is an avid tennis player who reports acute onset of right shoulder pain after hitting a powerful serve during a match 3 days ago. He describes the pain as sharp and localized to the anterior shoulder, with associated weakness when trying to lift his arm overhead. There is no numbness or tingling in the arm.",
+                "Symptoms": {
+                    "Primary_Symptom": "Sharp, localized right shoulder pain",
+                    "Secondary_Symptoms": [
+                        "Weakness when lifting the arm overhead",
+                        "No numbness or tingling"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No previous shoulder injuries.",
+                "Social_History": "The patient works as a software engineer and plays tennis recreationally. He does not smoke and drinks alcohol occasionally on weekends. He follows a healthy diet and exercises regularly.",
+                "Review_of_Systems": "Denies fever, chills, or other joint pain. No recent weight loss or fatigue."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Slight swelling and tenderness over the anterior right shoulder",
+                    "Palpation": "Tenderness over the bicipital groove",
+                    "Range_of_Motion": "Limited active range of motion in abduction and external rotation due to pain",
+                    "Special_Tests": "Positive Speed's test and Yergason's test indicating biceps tendon involvement"
+                }
+            },
+            "Test_Results": {
+                "MRI_Right_Shoulder": {
+                    "Findings": "Partial tear of the long head of the biceps tendon"
+                }
+            },
+            "Correct_Diagnosis": "Partial tear of the long head of the biceps tendon"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the elderly patient experiencing chest pain and bruising following a fall, with an emphasis on ruling out rib fractures and potential complications.",
+            "Patient_Actor": {
+                "Demographics": "70-year-old female",
+                "History": "The patient reports falling on her left side last Sunday, resulting in a large lump and significant bruising on her left chest. She has been managing pain with Aleve and arnica gel. She is concerned about an upcoming flight scheduled for this Sunday.",
+                "Symptoms": {
+                    "Primary_Symptom": "Pain on the left side of the chest",
+                    "Secondary_Symptoms": [
+                        "Large lump on the left chest",
+                        "Bruising and tenderness at the site of impact",
+                        "Concern about potential rib fractures"
+                    ]
+                },
+                "Past_Medical_History": "Hypertension managed with lisinopril. No history of osteoporosis or previous fractures.",
+                "Social_History": "Retired school teacher, lives alone, no history of tobacco or alcohol use.",
+                "Review_of_Systems": "Denies shortness of breath, cough, or fever. No recent weight loss or changes in appetite."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "132/78 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Chest_Examination": {
+                    "Inspection": "Visible bruising and swelling on the left side of the chest",
+                    "Palpation": "Tenderness and a palpable lump over the left ribs",
+                    "Percussion": "Dullness over the bruised area",
+                    "Auscultation": "Normal breath sounds, no wheezes or crackles"
+                }
+            },
+            "Test_Results": {
+                "X-ray_Chest": {
+                    "Findings": "Multiple rib fractures on the left side without evidence of pneumothorax or hemothorax"
+                }
+            },
+            "Correct_Diagnosis": "Rib fractures"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and provide support for a pregnant patient experiencing anxiety about her health and her baby's well-being.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old female, currently 24 weeks pregnant",
+                "History": "The patient reports increasing anxiety over the past month regarding her health and the health of her unborn child. She is concerned about potential complications during pregnancy and delivery despite having regular check-ups that indicate a healthy pregnancy. She works as a high school teacher and has been under additional stress due to workload and preparing for maternity leave.",
+                "Symptoms": {
+                    "Primary_Symptom": "Anxiety about health and pregnancy",
+                    "Secondary_Symptoms": [
+                        "Difficulty sleeping",
+                        "Frequent worries about baby's development",
+                        "Occasional heart palpitations when stressed"
+                    ]
+                },
+                "Past_Medical_History": "No significant medical history. First pregnancy.",
+                "Social_History": "Married, lives with her spouse who is supportive. Non-smoker, occasional social drinker prior to pregnancy, abstaining during pregnancy. Engages in light exercise, such as walking, a few times a week.",
+                "Review_of_Systems": "Denies any headaches, vision changes, or gastrointestinal symptoms. No history of mental health disorders, but family history of anxiety in mother."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "120/75 mmHg",
+                    "Heart_Rate": "82 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "General_Examination": {
+                    "Appearance": "Well-nourished, well-groomed, appears slightly anxious",
+                    "Cardiovascular": "Heart sounds normal, no murmurs or irregularities",
+                    "Abdominal": "Soft, non-tender, fetal heart rate audible and normal"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound": {
+                    "Findings": "Normal fetal growth and development consistent with gestational age"
+                },
+                "Blood_Work": {
+                    "Findings": "Normal complete blood count and metabolic panel"
+                }
+            },
+            "Correct_Diagnosis": "Pregnancy-related anxiety"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and prepare the patient for surgical intervention for vulvar cancer, considering comorbid conditions such as asthma and cervical spondylitis.",
+            "Patient_Actor": {
+                "Demographics": "80-year-old female",
+                "History": "The patient was diagnosed with well-differentiated keratinizing squamous cell carcinoma of the vulva. She presents with a swollen and red vulva, with areas of discoloration and a white growth now extending towards the rectum. She has a history of mild asthma and cervical spondylitis.",
+                "Symptoms": {
+                    "Primary_Symptom": "Swollen and red vulva with a white growth",
+                    "Secondary_Symptoms": [
+                        "Discoloration around the vulva",
+                        "White growth extending towards the rectum",
+                        "Mild shortness of breath due to asthma"
+                    ]
+                },
+                "Past_Medical_History": "Well-differentiated keratinizing squamous carcinoma of the vulva, mild asthma, cervical spondylitis.",
+                "Social_History": "The patient is a retired school teacher, lives with her son and daughter-in-law. She has never smoked and consumes alcohol occasionally.",
+                "Review_of_Systems": "Denies any recent fevers or significant weight loss; occasional shortness of breath during asthma exacerbations."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.0\u00b0F)",
+                    "Blood_Pressure": "130/80 mmHg",
+                    "Heart_Rate": "75 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "Visible swelling and discoloration of the vulva",
+                    "Palpation": "Tenderness noted in the vulvar region, firm mass palpable extending towards the rectum",
+                    "Auscultation": "No bowel sounds abnormality"
+                },
+                "Respiratory_Examination": {
+                    "Auscultation": "Mild wheezing heard bilaterally, more pronounced during expiration"
+                }
+            },
+            "Test_Results": {
+                "Biopsy": {
+                    "Findings": "Well-differentiated keratinizing squamous cell carcinoma of the vulva, invasive"
+                },
+                "Pulmonary_Function_Tests": {
+                    "FEV1_FVC_Ratio": "70%",
+                    "FEV1": "80%"
+                }
+            },
+            "Correct_Diagnosis": "Well-differentiated keratinizing squamous cell carcinoma of the vulva"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and diagnose the patient experiencing swallowing difficulties potentially related to medication side effects.",
+            "Patient_Actor": {
+                "Demographics": "72-year-old male",
+                "History": "The patient reports difficulty swallowing solid foods, which has progressively worsened over the past two months. He describes a sensation of food 'sticking' in the throat and occasional coughing while eating. He has a history of hypertension and was started on a new medication, lisinopril, three months ago.",
+                "Symptoms": {
+                    "Primary_Symptom": "Difficulty swallowing solid foods",
+                    "Secondary_Symptoms": [
+                        "Sensation of food sticking in the throat",
+                        "Occasional coughing while eating",
+                        "Mild weight loss of 5 pounds over two months"
+                    ]
+                },
+                "Past_Medical_History": "Hypertension managed with lisinopril, history of gastroesophageal reflux managed with omeprazole.",
+                "Social_History": "Lives alone, non-smoker, occasional alcohol use. Retired school teacher.",
+                "Review_of_Systems": "Denies chest pain, heartburn, or regurgitation. No changes in bowel habits or appetite."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "130/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "Oral_Examination": {
+                    "Inspection": "Oral cavity and oropharynx appear normal",
+                    "Palpation": "No palpable masses in the neck"
+                }
+            },
+            "Test_Results": {
+                "Barium_Swallow": {
+                    "Findings": "Mild esophageal dysmotility observed with delayed passage of solids"
+                },
+                "Esophagogastroduodenoscopy (EGD)": {
+                    "Findings": "No structural abnormalities; mild esophagitis noted"
+                }
+            },
+            "Correct_Diagnosis": "Esophageal dysphagia secondary to lisinopril-induced angioedema"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and manage the patient presenting with persistent rib pain and cough despite multiple treatments.",
+            "Patient_Actor": {
+                "Demographics": "35-year-old female",
+                "History": "The patient is returning for a follow-up appointment due to persistent cough and rib pain. She has been experiencing these symptoms since December 28, 2012, after an episode of bronchitis. She has been on three different antibiotics, mucinex, and an inhaler, but her symptoms have not improved. She denies having a fever throughout this period. Additionally, she has started to notice ulcers in her mouth and facial breakouts.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent cough with right-sided rib pain",
+                    "Secondary_Symptoms": [
+                        "Mouth ulcers",
+                        "Facial breakouts",
+                        "History of bronchitis",
+                        "No fever"
+                    ]
+                },
+                "Past_Medical_History": "History of bronchitis treated with antibiotics.",
+                "Social_History": "Non-smoker, works as an office manager. No known allergies. Occasionally drinks socially.",
+                "Review_of_Systems": "Denies chest pain, palpitations, or shortness of breath beyond the persistent cough. No recent weight loss or changes in appetite."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "20 breaths/min",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Respiratory_Examination": {
+                    "Inspection": "No visible abnormalities, but patient appears uncomfortable due to rib pain",
+                    "Palpation": "Tenderness on palpation over the right lower ribs",
+                    "Percussion": "Resonant throughout",
+                    "Auscultation": "Clear breath sounds, no wheezes or crackles"
+                }
+            },
+            "Test_Results": {
+                "Chest_X-ray": {
+                    "Findings": "No abnormalities"
+                },
+                "Blood_Work": {
+                    "Findings": "Normal CBC, slightly elevated ESR"
+                }
+            },
+            "Correct_Diagnosis": "Costochondritis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the elderly patient presenting with blackouts, heart murmur, and fluctuating blood pressure.",
+            "Patient_Actor": {
+                "Demographics": "72-year-old female",
+                "History": "The patient has a known heart murmur, which has been present for several years but recently associated with episodes of blackouts. The patient experiences panic attacks and has noticed occasional bruising on her lower back. She reports fluctuating blood pressure readings over the past month, with episodes of both high and low blood pressure.",
+                "Symptoms": {
+                    "Primary_Symptom": "Episodes of blackouts",
+                    "Secondary_Symptoms": [
+                        "Heart murmur",
+                        "Panic attacks",
+                        "Fluctuating blood pressure",
+                        "Bruising on lower back"
+                    ]
+                },
+                "Past_Medical_History": "History of hypertension managed with lisinopril. Diagnosed with generalized anxiety disorder, managed with cognitive behavioral therapy. Osteoarthritis in both knees.",
+                "Social_History": "Lives alone, widowed, and has two adult children living nearby. Non-smoker and consumes alcohol occasionally. Engages in light exercise such as walking.",
+                "Review_of_Systems": "Denies any recent chest pain, dyspnea on exertion, or palpitations beyond what's associated with panic attacks."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.9\u00b0C (98.4\u00b0F)",
+                    "Blood_Pressure": "Varies between 150/95 mmHg and 100/60 mmHg",
+                    "Heart_Rate": "84 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Cardiovascular_Examination": {
+                    "Inspection": "No visible abnormalities",
+                    "Palpation": "No peripheral edema",
+                    "Auscultation": "Grade 2/6 systolic murmur best heard at the left sternal border"
+                },
+                "Skin_Examination": {
+                    "Inspection": "Multiple small bruises on the lower back"
+                }
+            },
+            "Test_Results": {
+                "ECG": {
+                    "Findings": "Normal sinus rhythm with occasional premature ventricular contractions"
+                },
+                "Echocardiogram": {
+                    "Findings": "Mild mitral regurgitation with preserved ejection fraction"
+                },
+                "Complete_Blood_Count": {
+                    "Findings": "Hemoglobin slightly low at 11.5 g/dL"
+                },
+                "Thyroid_Function_Tests": {
+                    "Findings": "Within normal limits"
+                },
+                "Electrolyte_Panel": {
+                    "Findings": "Slightly low potassium at 3.4 mmol/L"
+                }
+            },
+            "Correct_Diagnosis": "Cardiac arrhythmia secondary to underlying structural heart changes and labile blood pressure"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate the patient for potential genetic predispositions to cardiovascular disease, considering family history and current medication interactions.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female, originally from Brazil, primary language Portuguese",
+                "History": "The patient reports a family history of cardiac disease, with both her father and grandfather having suffered heart attacks in their 50s. She is concerned about her cardiovascular health. Currently on Metformin 1000mg BID for PCOS, Percocet 10/650 for a recent fracture, Zoloft 150mg daily, Adderall 30mg BID, and clonazepam as needed for anxiety, typically used a few nights a week. Consumes one glass of red wine nightly for purported heart health benefits.",
+                "Symptoms": {
+                    "Primary_Symptom": "Concern about cardiovascular health due to family history",
+                    "Secondary_Symptoms": [
+                        "Occasional anxiety",
+                        "PCOS management with Metformin",
+                        "Recent fracture requiring Percocet for pain management"
+                    ]
+                },
+                "Past_Medical_History": "PCOS diagnosed at age 26. Anxiety disorder managed with Zoloft and clonazepam.",
+                "Social_History": "Works as a graphic designer. Lives with her partner and has no children. Smokes occasionally, about 3-4 cigarettes a week. Drinks a glass of red wine nightly. No recreational drug use.",
+                "Review_of_Systems": "Denies chest pain, palpitations, or shortness of breath. Reports stable mood on current medication regimen."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "128/82 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Cardiovascular_Examination": {
+                    "Inspection": "No visible distress",
+                    "Palpation": "Normal peripheral pulses",
+                    "Auscultation": "Normal S1 and S2, no murmurs"
+                }
+            },
+            "Test_Results": {
+                "Liver_Function_Test": {
+                    "Findings": "Mild elevation in ALT and AST"
+                },
+                "Genetic_Testing": {
+                    "Findings": "Identified genetic variant associated with increased cardiovascular risk"
+                }
+            },
+            "Correct_Diagnosis": "Increased genetic predisposition to cardiovascular disease"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and evaluate the mental health and occupational impact on a patient experiencing anxiety and fatigue after recent travel.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old female",
+                "History": "Returned from a three-week trip to Southeast Asia two weeks ago. Experiencing significant anxiety and fatigue since returning. Reports high-stress levels related to work and difficulty adjusting back to her routine. She works as a project manager in a tech company and has a history of anxiety managed with cognitive behavioral therapy (CBT).",
+                "Symptoms": {
+                    "Primary_Symptom": "Increased anxiety and persistent fatigue",
+                    "Secondary_Symptoms": [
+                        "Difficulty concentrating at work",
+                        "Trouble sleeping",
+                        "Feeling overwhelmed with daily tasks"
+                    ]
+                },
+                "Past_Medical_History": "History of generalized anxiety disorder, managed with CBT. No significant physical health issues.",
+                "Social_History": "Lives alone in an apartment, engages in regular yoga sessions, and maintains a vegetarian diet. No history of smoking or substance use.",
+                "Review_of_Systems": "Denies fever, cough, or gastrointestinal symptoms. Notes occasional headaches and muscle tension."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98\u00b0F)",
+                    "Blood_Pressure": "118/76 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Mental_Status_Examination": {
+                    "Appearance": "Well-groomed, appears slightly fatigued",
+                    "Behavior": "Cooperative, but appears slightly anxious",
+                    "Mood": "Anxious",
+                    "Affect": "Restricted",
+                    "Thought_Process": "Logical and coherent",
+                    "Cognition": "Alert and oriented, but reports concentration difficulties"
+                }
+            },
+            "Test_Results": {
+                "Blood_Work": {
+                    "Findings": "Normal complete blood count and metabolic panel. Thyroid function tests within normal limits."
+                }
+            },
+            "Correct_Diagnosis": "Adjustment Disorder with Anxiety"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a patient diagnosed with acute hepatitis E who is experiencing jaundice and gastrointestinal symptoms, and provide advice on supportive care.",
+            "Patient_Actor": {
+                "Demographics": "30-year-old male",
+                "History": "The patient was recently hospitalized for 5 days due to jaundice and severe weakness. He reports feeling better now but still experiences significant fluctuations in his energy levels, feeling good at times and very unwell at others. He is hesitant to share details about his lifestyle and social history, but mentions being on complete rest with minimal physical activity.",
+                "Symptoms": {
+                    "Primary_Symptom": "Jaundice due to hepatitis E",
+                    "Secondary_Symptoms": [
+                        "Severe weakness",
+                        "Intermittent acidity",
+                        "Fluctuating energy levels"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No known allergies.",
+                "Social_History": "Lives alone, works in a sedentary job, hesitant to disclose alcohol consumption or dietary habits.",
+                "Review_of_Systems": "Denies fever, bleeding, or excessive sleepiness at present."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "118/78 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "General_Appearance": {
+                    "Inspection": "Noticeable jaundice, particularly in the sclera and skin",
+                    "Palpation": "Mild tenderness in the right upper quadrant of the abdomen"
+                }
+            },
+            "Test_Results": {
+                "Liver_Function_Tests": {
+                    "Total_Bilirubin": "5 mg/dL",
+                    "AST": "1400 IU/L",
+                    "ALT": "1400 IU/L"
+                }
+            },
+            "Correct_Diagnosis": "Acute hepatitis E"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and diagnose the patient presenting with symptoms of an allergic reaction.",
+            "Patient_Actor": {
+                "Demographics": "35-year-old female",
+                "History": "The patient reports a 2-day history of intense itching and a rash that appeared after using several home remedies and over-the-counter treatments for scabies. She has been using permethrin cream, Eurax, tea tree oil, and hydrogen peroxide. She also mentioned sanding her skin in an attempt to alleviate the itching.",
+                "Symptoms": {
+                    "Primary_Symptom": "Severe itching and rash",
+                    "Secondary_Symptoms": [
+                        "Red, inflamed skin",
+                        "Dryness and peeling skin",
+                        "No fever or systemic symptoms"
+                    ]
+                },
+                "Past_Medical_History": "History of mild asthma, well-controlled with occasional use of an albuterol inhaler. No known drug allergies.",
+                "Social_History": "Lives with family, including an older son. Works as a school teacher. No tobacco or alcohol use.",
+                "Review_of_Systems": "Denies respiratory symptoms, gastrointestinal upset, or neurological symptoms."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Dermatological_Examination": {
+                    "Inspection": "Diffuse erythematous rash on arms, legs, and torso. Skin appears dry and flaky with areas of excoriation.",
+                    "Palpation": "Warm to touch, with evidence of scratching.",
+                    "Special_Tests": "Patch testing not performed at this time."
+                }
+            },
+            "Test_Results": {
+                "Allergy_Testing": {
+                    "Findings": "Pending"
+                }
+            },
+            "Correct_Diagnosis": "Contact dermatitis secondary to multiple topical treatments"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and fit an elderly patient with a new upper limb prosthetic device considering their age-related health concerns.",
+            "Patient_Actor": {
+                "Demographics": "76-year-old male",
+                "History": "The patient is a retired engineer who lost his right hand in a farming accident 10 years ago. He has been using a basic prosthetic but finds it uncomfortable and limited in functionality. He is now interested in a more advanced prosthetic device to improve his quality of life.",
+                "Symptoms": {
+                    "Primary_Symptom": "Difficulty performing daily tasks with current prosthetic",
+                    "Secondary_Symptoms": [
+                        "Discomfort and occasional skin irritation at the prosthetic socket",
+                        "Decreased mobility due to arthritis in the left hand"
+                    ]
+                },
+                "Past_Medical_History": "Hypertension, well-controlled with medication. Osteoarthritis in the left hand and knees. No history of diabetes or cardiovascular disease.",
+                "Social_History": "Lives with his wife in a suburban area. Non-smoker, occasional alcohol consumption. Enjoys gardening and woodworking as hobbies.",
+                "Review_of_Systems": "Denies any recent weight loss, fatigue, or changes in appetite. Reports stable blood pressure readings and good compliance with medications."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "130/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Well-healed amputation stump on the right forearm with no signs of infection or significant scar contraction",
+                    "Palpation": "Mild tenderness at the site of prosthetic socket contact",
+                    "Range_of_Motion": "Limited range of motion in the left hand due to arthritis",
+                    "Strength": "Good muscle strength in the left upper limb"
+                }
+            },
+            "Test_Results": {
+                "X-ray_Left_Hand": {
+                    "Findings": "Degenerative changes consistent with osteoarthritis"
+                }
+            },
+            "Correct_Diagnosis": "Need for advanced upper limb prosthetic due to right hand amputation and left hand arthritis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and provide psychological support for a patient experiencing anxiety and stress related to exposure to hazardous materials at work.",
+            "Patient_Actor": {
+                "Demographics": "34-year-old male",
+                "History": "The patient works as an industrial painter and reports being exposed to chemical fumes and hazardous materials at work for the past 5 years. He mentions that his workplace has inadequate ventilation. Recently, the patient has been feeling increased anxiety about his health and potential long-term effects of exposure.",
+                "Symptoms": {
+                    "Primary_Symptom": "Anxiety related to work exposure",
+                    "Secondary_Symptoms": [
+                        "Stress about potential health risks",
+                        "Trouble sleeping",
+                        "Occasional headaches",
+                        "Irritability"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No known allergies.",
+                "Social_History": "Married with two children, non-smoker, drinks alcohol socially on weekends. Enjoys hiking and outdoor activities.",
+                "Review_of_Systems": "Denies chest pain, shortness of breath, or gastrointestinal issues. Reports mild headaches occurring a few times a week and difficulty sleeping."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                }
+            },
+            "Test_Results": {
+                "Blood_Tests": {
+                    "Findings": "Normal complete blood count and liver function tests"
+                },
+                "Lung_Function_Test": {
+                    "Findings": "Slightly reduced FEV1 indicating mild obstructive pattern, possibly due to occupational exposure"
+                }
+            },
+            "Correct_Diagnosis": "Work-related anxiety and stress due to exposure to hazardous materials"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Conduct a comprehensive eye examination and vision therapy evaluation for a patient experiencing visual discomfort and hesitation in sharing personal information.",
+            "Patient_Actor": {
+                "Demographics": "33-year-old male",
+                "History": "The patient reports experiencing eye strain and discomfort, particularly when working on the computer for extended periods. He avoids providing detailed personal history but mentions a recent job change and the need for improved visual performance. He denies any known eye conditions or previous optometric treatments.",
+                "Symptoms": {
+                    "Primary_Symptom": "Eye strain and discomfort during prolonged computer use",
+                    "Secondary_Symptoms": [
+                        "Occasional headaches",
+                        "Blurred vision at the end of the day",
+                        "Difficulty focusing on near tasks"
+                    ]
+                },
+                "Past_Medical_History": "Elevated SGPT level and mild fatty liver recently diagnosed during a pre-employment medical check-up. No known history of eye diseases.",
+                "Social_History": "The patient is employed in a desk job that requires significant screen time. He admits to occasional alcohol consumption and follows a relatively balanced diet. He is hesitant to provide information about his personal life or hobbies.",
+                "Review_of_Systems": "Denies any recent fever, fatigue, or systemic symptoms. Reports recent cold with cough and loose motions, managed with antibiotics."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "72/min",
+                    "Respirations": "16/min",
+                    "Blood_Pressure": "120/78 mm Hg",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Eye_Examination": {
+                    "Visual_Acuity": "20/20 in both eyes",
+                    "Refraction": "Mild hyperopia",
+                    "Ocular_Motility": "Normal",
+                    "Cover_Test": "Intermittent exophoria",
+                    "Convergence": "Reduced convergence ability"
+                }
+            },
+            "Test_Results": {
+                "Visual_Field_Test": {
+                    "Findings": "Normal visual fields"
+                },
+                "Ocular_Health_Assessment": {
+                    "Findings": "Healthy retina and optic nerve"
+                }
+            },
+            "Correct_Diagnosis": "Convergence insufficiency"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and provide genetic counseling for a patient with Marfan syndrome concerned about cardiovascular risks.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old male",
+                "History": "The patient was diagnosed with Marfan syndrome at the age of 14 after aortic dilation was noted during a routine check-up. He has been under regular cardiological surveillance. He experiences occasional palpitations and has a history of lens dislocation requiring surgical correction at age 20.",
+                "Symptoms": {
+                    "Primary_Symptom": "Concern about cardiovascular complications due to Marfan syndrome",
+                    "Secondary_Symptoms": [
+                        "Occasional palpitations",
+                        "Previous lens dislocation"
+                    ]
+                },
+                "Past_Medical_History": "Marfan syndrome diagnosed at age 14. History of aortic dilation. Lens dislocation surgically corrected at age 20.",
+                "Social_History": "Works as a software developer, lives with partner. Non-smoker, occasional alcohol use. Engages in low-impact exercises such as swimming.",
+                "Review_of_Systems": "Denies chest pain, shortness of breath, or recent changes in vision. Occasionally experiences back pain."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "72/min",
+                    "Respirations": "16/min",
+                    "Blood_Pressure": "110/70 mm Hg",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Cardiovascular_Examination": {
+                    "Inspection": "No visible jugular venous distension",
+                    "Palpation": "Normal apical impulse",
+                    "Auscultation": "Mid-systolic click heard best at the apex",
+                    "Peripheral Pulses": "Normal and symmetric"
+                }
+            },
+            "Test_Results": {
+                "Echocardiogram": {
+                    "Findings": "Mild aortic root dilation, mitral valve prolapse with mild regurgitation"
+                },
+                "Genetic Testing": {
+                    "Findings": "FBN1 gene mutation confirmed, consistent with Marfan syndrome"
+                }
+            },
+            "Correct_Diagnosis": "Marfan syndrome with cardiovascular manifestations"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Consult with a pregnant patient who is concerned about her recent dental procedure and its implications for her health and the well-being of her baby.",
+            "Patient_Actor": {
+                "Demographics": "29-year-old female, 20 weeks pregnant",
+                "History": "The patient underwent a partial root canal 36 hours ago on her lower left second molar. She reports significant pain in the treated tooth, as well as referred pain to the upper molar and back jaw muscle. There is noticeable swelling and tenderness in the neck area. She is worried about the implications of her dental treatment and the use of medications on her pregnancy.",
+                "Symptoms": {
+                    "Primary_Symptom": "Significant pain in the lower left molar post-dental procedure",
+                    "Secondary_Symptoms": [
+                        "Referred pain to upper molar and jaw muscle",
+                        "Swelling and tenderness in the neck",
+                        "Concern about the safety of prescribed medications during pregnancy"
+                    ]
+                },
+                "Past_Medical_History": "No known allergies, no significant past medical history.",
+                "Social_History": "Works as a teacher, lives with her partner, no use of tobacco or alcohol.",
+                "Review_of_Systems": "Denies fever, chills, or other systemic symptoms. Normal fetal movements reported."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.9\u00b0C (98.4\u00b0F)",
+                    "Blood_Pressure": "115/75 mmHg",
+                    "Heart_Rate": "78 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Oral_Examination": {
+                    "Inspection": "Temporary filling in place on lower left second molar, mild erythema in surrounding gum tissue",
+                    "Palpation": "Tenderness on palpation of the lower left jaw and neck",
+                    "Neck Examination": "Mild cervical lymphadenopathy"
+                }
+            },
+            "Test_Results": {
+                "Dental_X-ray": {
+                    "Findings": "Evidence of endodontic flare-up with periapical inflammation on the lower left second molar"
+                }
+            },
+            "Correct_Diagnosis": "Endodontic flare-up post root canal treatment"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the elderly patient presenting with age-related health concerns, primarily mobility issues and balance difficulties.",
+            "Patient_Actor": {
+                "Demographics": "75-year-old female",
+                "History": "The patient reports increasing difficulty with mobility and balance over the past 6 months. She has experienced occasional dizziness, particularly when getting up from a seated position. She denies any falls but is concerned about her balance. She lives alone and is independent with activities of daily living, but she avoids walking long distances due to fear of instability.",
+                "Symptoms": {
+                    "Primary_Symptom": "Difficulty with mobility and balance",
+                    "Secondary_Symptoms": [
+                        "Occasional dizziness when standing",
+                        "Fear of falling",
+                        "Avoidance of long walks"
+                    ]
+                },
+                "Past_Medical_History": "Hypertension, managed with lisinopril. Osteoarthritis in the knees. Cataract surgery 3 years ago.",
+                "Social_History": "Widowed, lives alone, non-smoker, occasional glass of wine. She enjoys gardening and reading.",
+                "Review_of_Systems": "Denies recent weight loss, chest pain, or palpitations. Occasional mild knee pain."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "138/88 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.6\u00b0C (97.9\u00b0F)"
+                },
+                "Neurological_Examination": {
+                    "Gait": "Shuffling gait with reduced arm swing",
+                    "Balance": "Positive Romberg test, mild swaying",
+                    "Coordination": "Mild dysmetria on finger-to-nose testing"
+                },
+                "Musculoskeletal_Examination": {
+                    "Range_of_Motion": "Limited range of motion in both knees",
+                    "Strength": "4/5 strength in lower extremities"
+                }
+            },
+            "Test_Results": {
+                "Blood_Work": {
+                    "Vitamin_B12_Level": "Normal",
+                    "Electrolytes": "Normal"
+                },
+                "X-ray_Knees": {
+                    "Findings": "Moderate osteoarthritic changes in both knees"
+                }
+            }
+        },
+        "Correct_Diagnosis": "Age-related mobility and balance issues exacerbated by osteoarthritis"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and manage a patient presenting with chronic wrist pain exacerbated by recent activity.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female",
+                "History": "The patient reports chronic mild discomfort in her right wrist over the past year, which she attributes to her frequent participation in volleyball. Seven hours ago, while playing volleyball, she hit the ball with the underside of her hand, bending her wrist backward and causing a sharp pain. Since then, she has experienced significant pain when bending her hand backward or putting pressure on the wrist, although she can grip objects without pain.",
+                "Symptoms": {
+                    "Primary_Symptom": "Sharp pain in the right wrist with backward movement",
+                    "Secondary_Symptoms": [
+                        "Pain with pressure application on the wrist",
+                        "No pain when gripping objects",
+                        "Chronic mild discomfort in the wrist over the past year"
+                    ]
+                },
+                "Past_Medical_History": "No previous fractures or significant injuries. No history of wrist surgery.",
+                "Social_History": "Active lifestyle, plays volleyball regularly. Works as a graphic designer. Non-smoker, occasional social drinker.",
+                "Review_of_Systems": "Denies recent fever, trauma other than while playing volleyball, or other joint pains."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "118/76 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "Mild swelling around the right wrist, no visible deformity or discoloration",
+                    "Palpation": "Tenderness over the dorsal aspect of the wrist",
+                    "Range_of_Motion": "Limited due to pain on extension, otherwise normal",
+                    "Special_Tests": "Negative Finkelstein's test, suggesting no de Quervain's tenosynovitis"
+                }
+            },
+            "Test_Results": {
+                "X-ray_Right_Wrist": {
+                    "Findings": "No fracture or dislocation, mild degenerative changes in the wrist joint"
+                }
+            },
+            "Correct_Diagnosis": "Wrist sprain with underlying mild osteoarthritis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate psychological impact and provide counseling for a patient exposed to hazardous materials at work.",
+            "Patient_Actor": {
+                "Demographics": "45-year-old male",
+                "History": "The patient is a factory worker who has been exposed to hazardous chemicals for over 10 years. He reports feeling increasingly anxious about his health and the potential long-term effects of the exposure. He has recently been experiencing difficulty sleeping, irritability, and frequent headaches.",
+                "Symptoms": {
+                    "Primary_Symptom": "Anxiety about health due to chemical exposure",
+                    "Secondary_Symptoms": [
+                        "Difficulty sleeping",
+                        "Irritability",
+                        "Frequent headaches",
+                        "Concern about potential long-term health effects"
+                    ]
+                },
+                "Past_Medical_History": "Has a history of atrial fibrillation and is on a pacemaker. Currently taking 750 mg of Coumadin daily for anticoagulation therapy.",
+                "Social_History": "Married with two children. Does not smoke or consume alcohol. Engages in minimal physical activity due to fatigue.",
+                "Review_of_Systems": "Denies any recent weight changes, gastrointestinal symptoms, or changes in appetite. Reports feeling nauseous and dizzy from medication."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                }
+            },
+            "Test_Results": {
+                "Complete_Blood_Count": {
+                    "Findings": "Within normal limits"
+                },
+                "Liver_Function_Tests": {
+                    "Findings": "Slightly elevated liver enzymes"
+                },
+                "Psychological_Assessment": {
+                    "Findings": "Elevated anxiety levels, moderate depression"
+                }
+            }
+        },
+        "Correct_Diagnosis": "Work-related anxiety disorder with possible chemical exposure concerns"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and prepare the adolescent patient for potential liver transplantation surgery, addressing psychological readiness and potential rehabilitation needs.",
+            "Patient_Actor": {
+                "Demographics": "15-year-old male",
+                "History": "The patient has been diagnosed with chronic liver disease due to both Hepatitis B and C infections. He presents with significant liver and spleen enlargement, mild ascites, and space-occupying lesions on both lobes of the liver. There is a concern for hepatocellular carcinoma due to the presence of these lesions. The patient has been experiencing a significant decrease in appetite and subsequent weight loss.",
+                "Symptoms": {
+                    "Primary_Symptom": "Enlarged liver and spleen with potential hepatocellular carcinoma",
+                    "Secondary_Symptoms": [
+                        "Mild ascites",
+                        "Severe loss of appetite",
+                        "Weight loss"
+                    ]
+                },
+                "Past_Medical_History": "No previous surgeries or hospitalizations. Regular vaccinations up to date except for missed Hepatitis B vaccine series.",
+                "Social_History": "Lives with parents and two siblings. Engaged in school activities but recent health issues have led to decreased participation. No alcohol or drug use. Family is supportive but anxious about the situation.",
+                "Review_of_Systems": "Denies fever, jaundice, or abdominal pain. Reports feeling more fatigued and having difficulty concentrating at school."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "78 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "Distended abdomen with visible veins",
+                    "Palpation": "Hepatomegaly and splenomegaly noted; mild tenderness in right upper quadrant",
+                    "Percussion": "Dullness over liver region",
+                    "Auscultation": "Normal bowel sounds"
+                }
+            },
+            "Test_Results": {
+                "Liver_Function_Tests": {
+                    "ALT": "Elevated",
+                    "AST": "Elevated",
+                    "Bilirubin": "Normal"
+                },
+                "Ultrasound_Abdomen": {
+                    "Findings": "Enlarged liver and spleen, presence of ascites, and multiple lesions on liver"
+                },
+                "AFP_Liver_Tumor_Marker": {
+                    "Findings": "Elevated"
+                }
+            }
+        },
+        "Correct_Diagnosis": "Chronic liver disease with suspected hepatocellular carcinoma, requiring liver transplantation evaluation"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and diagnose the infant presenting with respiratory distress and noisy breathing.",
+            "Patient_Actor": {
+                "Demographics": "6-month-old female",
+                "History": "The infant has had noisy breathing and episodes of respiratory distress for the past week. Parents report that she was born at term with no complications and has been breastfeeding well until recently. They noticed she has been more irritable and feeding less due to difficulty breathing. No recent travel, fever, or upper respiratory symptoms.",
+                "Symptoms": {
+                    "Primary_Symptom": "Noisy breathing and respiratory distress",
+                    "Secondary_Symptoms": [
+                        "Irritability",
+                        "Decreased feeding",
+                        "No fever"
+                    ]
+                },
+                "Past_Medical_History": "No significant medical or surgical history. Normal developmental milestones.",
+                "Social_History": "Lives with both parents and an older sibling in a smoke-free home. No daycare exposure.",
+                "Review_of_Systems": "Denies fever, cough, nasal congestion, or gastrointestinal symptoms."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Heart_Rate": "128 bpm",
+                    "Respiratory_Rate": "42 breaths/min",
+                    "Oxygen_Saturation": "94% on room air"
+                },
+                "Respiratory_Examination": {
+                    "Inspection": "Intermittent suprasternal retractions",
+                    "Palpation": "No tracheal deviation",
+                    "Percussion": "Resonant",
+                    "Auscultation": "Inspiratory stridor without wheezing"
+                }
+            },
+            "Test_Results": {
+                "Neck_X-ray": {
+                    "Findings": "Subglottic narrowing suggestive of laryngomalacia"
+                }
+            },
+            "Correct_Diagnosis": "Laryngomalacia"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Provide a second opinion on the psychological evaluation of a young female patient with a history of behavioral issues and a recent diagnosis of Conduct Disorder.",
+            "Patient_Actor": {
+                "Demographics": "14-year-old female",
+                "History": "The patient has been referred for a second opinion after being diagnosed with Conduct Disorder by a school psychologist. Her parents report a history of repeated aggressive behavior, truancy, and theft over the past year. She has been suspended from school multiple times due to fighting and verbal aggression.",
+                "Symptoms": {
+                    "Primary_Symptom": "Aggressive and defiant behavior",
+                    "Secondary_Symptoms": [
+                        "Chronic truancy from school",
+                        "Theft from family and peers",
+                        "Lack of remorse for her actions"
+                    ]
+                },
+                "Past_Medical_History": "No significant medical history. Immunizations are up to date.",
+                "Social_History": "Lives with both parents and a younger brother. Parents describe the family environment as stable but report frequent conflicts over her behavior. No history of substance abuse.",
+                "Review_of_Systems": "Denies any symptoms of depression or anxiety. No reported hallucinations or delusions."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "72/min",
+                    "Respirations": "16/min",
+                    "Blood_Pressure": "110/70 mm Hg",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                }
+            },
+            "Test_Results": {
+                "Psychological_Evaluation": {
+                    "Findings": "The initial assessment indicates high levels of impulsivity and low scores on empathy scales. Cognitive testing shows average intellectual functioning. No learning disabilities detected."
+                }
+            },
+            "Correct_Diagnosis": "Conduct Disorder"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate the cognitive disturbances in a young adult patient with a history of transient ischemic attacks (TIAs).",
+            "Patient_Actor": {
+                "Demographics": "39-year-old female",
+                "History": "The patient has experienced several transient ischemic attacks (TIAs) since the age of 35. Recently, she has had episodes where she struggles to organize her thoughts and finds difficulty in verbalizing them. She describes an event on April 15th where she couldn't articulate a simple phrase while volunteering. The episodes are brief and resolve on their own. No history of head trauma or seizures.",
+                "Symptoms": {
+                    "Primary_Symptom": "Difficulty organizing thoughts and verbalizing them",
+                    "Secondary_Symptoms": [
+                        "Brief episodes of confusion",
+                        "No loss of consciousness",
+                        "No associated headache or dizziness"
+                    ]
+                },
+                "Past_Medical_History": "Multiple transient ischemic attacks since the age of 35. No history of hypertension, diabetes, or hyperlipidemia.",
+                "Social_History": "Non-smoker, occasional social drinker. Works as an administrative assistant. Lives with her husband and two children.",
+                "Review_of_Systems": "Denies recent weight loss, fever, or urinary symptoms."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "128/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)"
+                },
+                "Neurological_Examination": {
+                    "Mental_Status": "Alert and oriented to person, place, and time",
+                    "Speech": "Normal fluency and comprehension during examination",
+                    "Cranial_Nerves": "Intact",
+                    "Motor_Strength": "5/5 in all extremities",
+                    "Sensation": "Intact to light touch and proprioception",
+                    "Reflexes": "2+ throughout"
+                }
+            },
+            "Test_Results": {
+                "MRI_Brain": {
+                    "Findings": "Multiple small areas of high signal intensity in the white matter on T2-weighted images, suggestive of chronic small vessel ischemic changes."
+                },
+                "Carotid_Doppler": {
+                    "Findings": "No significant stenosis"
+                }
+            },
+            "Correct_Diagnosis": "Multi-infarct dementia (Vascular cognitive impairment)"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Provide a second opinion on the prenatal genetic diagnosis and counsel the patient on potential outcomes and management.",
+            "Patient_Actor": {
+                "Demographics": "32-year-old female, currently 22 weeks pregnant",
+                "History": "The patient is referred for a second opinion after an anomaly was detected during a routine 20-week ultrasound. The ultrasound report indicated ventriculomegaly, prompting an MRI which showed mild prominence of the ventricular system and small faint hyperintense areas in the bilateral periventricular regions.",
+                "Symptoms": {
+                    "Primary_Symptom": "Concern over fetal brain development",
+                    "Secondary_Symptoms": [
+                        "Anxiety about potential developmental issues",
+                        "No physical symptoms as the patient is asymptomatic"
+                    ]
+                },
+                "Past_Medical_History": "No significant medical history. Previous pregnancy resulted in a healthy child.",
+                "Social_History": "Non-smoker, occasional alcohol use before pregnancy. Works as a school teacher. Lives with husband and 3-year-old daughter.",
+                "Review_of_Systems": "No current health issues reported. Regular prenatal care with no complications prior to the anomaly detection."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound_Report": {
+                    "Findings": "Mild ventriculomegaly observed."
+                },
+                "Fetal_MRI": {
+                    "Findings": "Ventricular system appears mildly prominent with small faint hyperintense areas noted in bilateral periventricular frontal and parieto-occipital regions."
+                }
+            }
+        },
+        "Correct_Diagnosis": "Possible Periventricular Leukomalacia in the fetus"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess the pediatric patient presenting with red, swollen eyes and a new rash, and determine the nutritional aspects that may need addressing for overall health.",
+            "Patient_Actor": {
+                "Demographics": "18-month-old male child, whose first language is Spanish.",
+                "History": "The mother reports that the child has had red and swollen eyes for the past 5 days. The redness and swelling are isolated to the eyelids and the area beneath the eyes. Yesterday, the child developed a rash covering his entire body. The child's appetite has been poor, and he has been more irritable than usual.",
+                "Symptoms": {
+                    "Primary_Symptom": "Red, swollen eyelids for 5 days",
+                    "Secondary_Symptoms": [
+                        "Rash all over the body since yesterday",
+                        "Poor appetite",
+                        "Increased irritability"
+                    ]
+                },
+                "Past_Medical_History": "No known allergies or chronic medical conditions. Up-to-date with vaccinations.",
+                "Social_History": "Lives with parents and a 4-year-old sibling in a non-smoking household. The family primarily speaks Spanish at home. The child attends a daycare three times a week.",
+                "Review_of_Systems": "No fever, no vomiting, no diarrhea. Has had runny nose and occasional sneezing."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98\u00b0F)",
+                    "Heart_Rate": "110 bpm",
+                    "Respiratory_Rate": "24 breaths/min",
+                    "Weight": "10 kg (22 lbs)"
+                },
+                "Skin_Examination": {
+                    "Observation": "Widespread maculopapular rash, more pronounced on the trunk and extremities",
+                    "Eye_Examination": "Bilateral periorbital edema with erythema, no conjunctival involvement"
+                }
+            },
+            "Test_Results": {
+                "Complete_Blood_Count": {
+                    "White_Blood_Cells": "Elevated",
+                    "Eosinophils": "Elevated"
+                },
+                "Allergy_Testing": {
+                    "Findings": "Positive for dust mites and cat dander"
+                }
+            }
+        },
+        "Correct_Diagnosis": "Allergic reaction with possible periorbital dermatitis"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess the nutritional needs and dietary adjustments for a young athlete recovering from a sports-related injury.",
+            "Patient_Actor": {
+                "Demographics": "15-year-old male",
+                "History": "The patient is a high school soccer player who recently fell during practice, sustaining a bruised tailbone. Post-injury, he reports feeling nauseated and lightheaded when standing for long periods. The pain is most severe when sitting, which has impacted his ability to attend classes comfortably.",
+                "Symptoms": {
+                    "Primary_Symptom": "Pain in the lower back area when sitting",
+                    "Secondary_Symptoms": [
+                        "Nausea",
+                        "Lightheadedness when standing",
+                        "Reduced appetite"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No known allergies.",
+                "Social_History": "Lives with parents and two younger siblings. Active in school sports and community soccer league. No tobacco or alcohol use.",
+                "Review_of_Systems": "Denies fever, chills, or recent weight loss. Reports decreased appetite since the injury but no vomiting or diarrhea."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "75 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "No visible deformity or swelling in the lower back",
+                    "Palpation": "Tenderness noted over the coccyx",
+                    "Range_of_Motion": "Full range of motion of the lower limbs; pain exacerbated by sitting",
+                    "Neurological": "Normal reflexes and strength in lower extremities"
+                }
+            },
+            "Test_Results": {
+                "X-ray_Lower_Back": {
+                    "Findings": "No fractures, mild soft tissue swelling over coccyx"
+                }
+            }
+        },
+        "Correct_Diagnosis": "Coccygeal contusion (bruised tailbone)"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and follow-up on a pediatric patient presenting with respiratory symptoms and possible chemical sensitivity.",
+            "Patient_Actor": {
+                "Demographics": "10-year-old female",
+                "History": "The patient returns for a follow-up appointment after initially presenting with respiratory distress and skin reactions suspected to be related to chemical sensitivities, specifically to fragrance products like dryer sheets and scent boosters. Initial symptoms included a rash, hot prickly skin, swelling of the tongue, and extreme thirst. The family has since removed all scented products from the home.",
+                "Symptoms": {
+                    "Primary_Symptom": "Respiratory distress upon exposure to fragrances",
+                    "Secondary_Symptoms": [
+                        "Rash and hot prickly skin",
+                        "Swelling of the tongue",
+                        "Extreme thirst"
+                    ]
+                },
+                "Past_Medical_History": "History of mild seasonal allergies managed with antihistamines. No previous hospitalizations or significant illnesses.",
+                "Social_History": "Lives with her parents and younger brother in a suburban area. Attends primary school and is active in outdoor activities. The household has no pets. No exposure to tobacco smoke.",
+                "Review_of_Systems": "Denies recent fever, cough, or gastrointestinal symptoms. No recent illnesses."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "102/65 mmHg",
+                    "Heart_Rate": "85 bpm",
+                    "Respiratory_Rate": "20 breaths/min",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Respiratory_Examination": {
+                    "Inspection": "No visible distress, normal chest wall movement",
+                    "Palpation": "Normal tactile fremitus",
+                    "Percussion": "Resonant throughout",
+                    "Auscultation": "Clear breath sounds bilaterally, no wheezes or crackles"
+                },
+                "Skin_Examination": {
+                    "Inspection": "No current rash or skin abnormalities visible"
+                }
+            },
+            "Test_Results": {
+                "Allergy_Testing": {
+                    "Findings": "Positive response to several fragrance chemicals"
+                },
+                "Pulmonary_Function_Test": {
+                    "FEV1/FVC_Ratio": "Normal"
+                }
+            },
+            "Correct_Diagnosis": "Chemical sensitivity with allergic reactions"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Provide a second opinion on a mental health occupational therapy approach for a patient with anxiety and obsessive behavior regarding skin health.",
+            "Patient_Actor": {
+                "Demographics": "34-year-old female",
+                "History": "The patient has a longstanding history of anxiety, particularly around health and cleanliness. Recently, she has developed an obsessive behavior concerning her 5-year-old daughter's skin condition. She constantly checks for pimples and applies homeopathic treatments and spirit despite reassurances from the pediatrician that the condition is benign and related to sweat and humidity.",
+                "Symptoms": {
+                    "Primary_Symptom": "Excessive worry about child's skin health",
+                    "Secondary_Symptoms": [
+                        "Obsessive checking and treating of child's skin",
+                        "Difficulty sleeping due to worry",
+                        "General anxiety about potential infections"
+                    ]
+                },
+                "Past_Medical_History": "Diagnosed with generalized anxiety disorder 5 years ago, managed with cognitive behavioral therapy and previously with selective serotonin reuptake inhibitors (SSRIs), which the patient discontinued on her own.",
+                "Social_History": "Married, mother of two. Works part-time as a freelance graphic designer. No smoking or alcohol use. Reports a supportive family but limited social interactions due to anxiety.",
+                "Review_of_Systems": "Denies panic attacks, depressive episodes, or other significant psychiatric symptoms."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.6\u00b0C (97.9\u00b0F)"
+                },
+                "Mental_Status_Examination": {
+                    "Appearance": "Well-groomed, slightly anxious demeanor",
+                    "Behavior": "Fidgeting when discussing daughter's condition",
+                    "Mood": "Anxious",
+                    "Affect": "Constricted",
+                    "Thought_Process": "Obsessive focus on child's skin health",
+                    "Insight": "Limited insight into the non-threatening nature of the condition"
+                }
+            },
+            "Test_Results": {}
+        },
+        "Correct_Diagnosis": "Health-related anxiety with obsessive-compulsive tendencies"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and assess the hearing status of the patient who has sustained a sports-related head injury and determine if a cochlear implant is necessary.",
+            "Patient_Actor": {
+                "Demographics": "27-year-old male",
+                "History": "The patient is a semi-professional soccer player who sustained a head injury 2 weeks ago during a match when he collided with another player. He has experienced a significant loss of hearing in his left ear since the incident. He denies any ringing or dizziness but reports difficulty understanding conversations, especially in noisy environments.",
+                "Symptoms": {
+                    "Primary_Symptom": "Significant hearing loss in the left ear",
+                    "Secondary_Symptoms": [
+                        "Difficulty understanding conversations",
+                        "No tinnitus",
+                        "No dizziness or vertigo"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical or surgical history. No previous hearing issues.",
+                "Social_History": "The patient is an active athlete, non-smoker, and consumes alcohol occasionally. Lives alone and is currently single.",
+                "Review_of_Systems": "Denies headaches, visual changes, or neurological deficits."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "118/76 mmHg",
+                    "Heart_Rate": "72 bpm",
+                    "Respiratory_Rate": "14 breaths/min"
+                },
+                "Neurological_Examination": {
+                    "Cranial_Nerves": "Cranial nerves II-XII intact except for partial hearing loss on the left",
+                    "Balance": "Normal balance and gait",
+                    "Coordination": "Normal finger-to-nose and heel-to-shin tests"
+                }
+            },
+            "Test_Results": {
+                "Audiogram": {
+                    "Findings": "Profound sensorineural hearing loss in the left ear, normal hearing in the right ear"
+                },
+                "CT_Scan_of_Head": {
+                    "Findings": "No acute intracranial hemorrhage or fracture noted"
+                }
+            },
+            "Correct_Diagnosis": "Unilateral sensorineural hearing loss due to acoustic trauma"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a pediatric patient presenting with a first-time seizure.",
+            "Patient_Actor": {
+                "Demographics": "8-year-old male, non-native English speaker",
+                "History": "The child experienced a seizure early in the morning for the first time. The seizure lasted approximately 3 minutes, followed by a brief period of unconsciousness. Upon regaining consciousness, the child had no recollection of the event. He has had a recent history of wheezing and is currently on medication for it. There is no known family history of seizures.",
+                "Symptoms": {
+                    "Primary_Symptom": "Seizure lasting approximately 3 minutes",
+                    "Secondary_Symptoms": [
+                        "Brief postictal unconsciousness",
+                        "Recent history of wheezing"
+                    ]
+                },
+                "Past_Medical_History": "No known prior medical or surgical history. No known allergies.",
+                "Social_History": "Lives with parents and one older sibling. Attends primary school. No exposure to tobacco or recreational drugs.",
+                "Review_of_Systems": "No recent fever, rash, or change in appetite. Denies headache, vision changes, or recent head trauma."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "105/70 mmHg",
+                    "Heart_Rate": "88 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Neurological_Examination": {
+                    "Mental_Status": "Alert, oriented to person, place, and time",
+                    "Cranial_Nerves": "Intact with no deficits",
+                    "Motor_Function": "Strength 5/5 throughout",
+                    "Sensory": "Intact to light touch and pinprick",
+                    "Reflexes": "2+ and symmetric"
+                }
+            },
+            "Test_Results": {
+                "EEG": {
+                    "Findings": "Intermittent generalized spike and wave discharges"
+                },
+                "MRI_Brain": {
+                    "Findings": "Normal structural findings"
+                }
+            },
+            "Correct_Diagnosis": "First-time seizure, likely generalized tonic-clonic"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and advise on post-exposure prophylaxis and management for a child bitten by an unvaccinated dog.",
+            "Patient_Actor": {
+                "Demographics": "12-year-old male",
+                "History": "The patient was bitten on the left forearm by a 2-month-old puppy that had not yet received its rabies vaccination. The incident occurred 5 days ago, and the patient has already received the 0-day and 3-day rabies vaccination series. The dog was vaccinated for rabies a week after the incident.",
+                "Symptoms": {
+                    "Primary_Symptom": "Concern about rabies exposure",
+                    "Secondary_Symptoms": [
+                        "Mild redness and swelling at the bite site",
+                        "No fever or systemic symptoms",
+                        "Mild anxiety about the situation"
+                    ]
+                },
+                "Past_Medical_History": "Up-to-date on all childhood vaccinations. No history of significant medical conditions.",
+                "Social_History": "Lives with parents and two siblings. No exposure to smoking or alcohol.",
+                "Review_of_Systems": "Negative for fever, rash, headache, or neurological symptoms."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.0\u00b0F)",
+                    "Blood_Pressure": "110/70 mmHg",
+                    "Heart_Rate": "78 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Local_Examination": {
+                    "Inspection": "Small puncture wound on the left forearm with mild erythema and swelling",
+                    "Palpation": "Tenderness around the bite site, no fluctuance or pus",
+                    "Range_of_Motion": "Full range of motion in the left arm and wrist"
+                }
+            },
+            "Test_Results": {
+                "Wound_Culture": {
+                    "Findings": "Pending"
+                }
+            },
+            "Correct_Diagnosis": "Rabies post-exposure prophylaxis in progress"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a patient with a recent sports-related injury affecting neurological function.",
+            "Patient_Actor": {
+                "Demographics": "22-year-old male",
+                "History": "The patient is a university student and active soccer player. He sustained a head injury 10 days ago during a match when he collided with another player. He experienced brief loss of consciousness for about 2 minutes and has had persistent headaches since the incident. No seizures, but reports episodes of dizziness and difficulty concentrating, which affect his studies and daily activities.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent headaches",
+                    "Secondary_Symptoms": [
+                        "Dizziness",
+                        "Difficulty concentrating",
+                        "Brief loss of consciousness at time of injury"
+                    ]
+                },
+                "Past_Medical_History": "No previous history of neurological disorders or significant medical issues. No history of head injuries.",
+                "Social_History": "Non-smoker, does not use recreational drugs, and drinks alcohol socially. Lives in a shared apartment with friends.",
+                "Review_of_Systems": "Denies any nausea, vomiting, visual disturbances, or hearing loss."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Pulse": "72/min",
+                    "Respirations": "16/min",
+                    "Blood_Pressure": "120/80 mm Hg",
+                    "Oxygen_Saturation": "98% on room air"
+                },
+                "Neurological_Examination": {
+                    "Cranial_Nerves": "Intact, with no deficits noted.",
+                    "Motor_Function": "Normal strength in all extremities.",
+                    "Sensory_Function": "Intact to light touch and pinprick.",
+                    "Coordination": "Mild ataxia noted during tandem gait.",
+                    "Reflexes": "2+ throughout, symmetrical."
+                }
+            },
+            "Test_Results": {
+                "CT_Scan_of_Head": {
+                    "Findings": "No acute intracranial hemorrhage or fractures. Mild cerebral edema noted."
+                },
+                "Cognitive_Assessment": {
+                    "Findings": "Mild impairment in attention and short-term memory tasks."
+                }
+            },
+            "Correct_Diagnosis": "Post-Concussion Syndrome"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and manage a patient with advanced metastatic kidney cancer and associated complications.",
+            "Patient_Actor": {
+                "Demographics": "67-year-old male",
+                "History": "The patient was diagnosed with kidney cancer in July last year. He underwent a left nephrectomy and was started on targeted therapy with Nexavar. After six months, a PET scan showed disease progression, and treatment was switched to another medication, but the condition deteriorated further. The patient experienced profound weakness, leading to a temporary discontinuation of the medication, which resulted in further condition worsening. Fluid accumulation in the lungs was noted, and the patient developed unclear speech. A brain CT scan revealed metastatic cells, and the patient received 10 days of radiation therapy, which, along with Votrient, initially improved the condition. However, the patient recently experienced a seizure-like episode and temporary speech loss.",
+                "Symptoms": {
+                    "Primary_Symptom": "Advanced metastatic kidney cancer",
+                    "Secondary_Symptoms": [
+                        "Profound weakness",
+                        "Shortness of breath due to pleural effusion",
+                        "Unclear speech",
+                        "Seizure-like episodes",
+                        "Temporary speech loss"
+                    ]
+                },
+                "Past_Medical_History": "History of hypertension managed with lisinopril. No prior history of seizures.",
+                "Social_History": "Retired construction worker, lives with spouse, non-smoker, occasional alcohol use.",
+                "Review_of_Systems": "Denies chest pain, palpitations, or recent infections. Reports fatigue, weight loss, and occasional headaches."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.2\u00b0C (98.9\u00b0F)",
+                    "Blood_Pressure": "130/85 mmHg",
+                    "Heart_Rate": "88 bpm",
+                    "Respiratory_Rate": "20 breaths/min",
+                    "Oxygen_Saturation": "92% on room air"
+                },
+                "Neurological_Examination": {
+                    "Speech": "Slurred and delayed",
+                    "Motor_Function": "Mild right-sided weakness",
+                    "Sensation": "Intact",
+                    "Reflexes": "Brisk on the right side"
+                },
+                "Respiratory_Examination": {
+                    "Inspection": "Increased work of breathing",
+                    "Auscultation": "Decreased breath sounds on the left side"
+                }
+            },
+            "Test_Results": {
+                "PET_Scan": {
+                    "Findings": "Increased metabolic activity indicating disease progression in the lungs and brain."
+                },
+                "Brain_CT_Scan": {
+                    "Findings": "Presence of metastatic lesions in the left hemisphere."
+                }
+            }
+        },
+        "Correct_Diagnosis": "Advanced metastatic renal cell carcinoma with brain and pulmonary metastases"
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the patient experiencing side effects from prescribed medication following a back injury at work.",
+            "Patient_Actor": {
+                "Demographics": "34-year-old male",
+                "History": "The patient reports falling at work 3 weeks ago, landing on his lower back on a wooden floor. He was initially signed off work for 2 weeks. After returning to work, his back pain worsened, and he can barely walk now. The patient's back seizes up frequently. He has been taking prescribed muscle relaxants and NSAIDs for pain management.",
+                "Symptoms": {
+                    "Primary_Symptom": "Severe lower back pain",
+                    "Secondary_Symptoms": [
+                        "Back seizes up frequently",
+                        "Difficulty walking",
+                        "Nausea and dizziness after taking medication"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. No prior history of back issues or chronic pain.",
+                "Social_History": "Works as a warehouse supervisor, involved in physically demanding tasks. Non-smoker, occasional social drinker. Lives alone.",
+                "Review_of_Systems": "Denies fever, chills, urinary or bowel dysfunction. Reports nausea and dizziness, correlating with medication intake."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "128/82 mmHg",
+                    "Heart_Rate": "76 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Musculoskeletal_Examination": {
+                    "Inspection": "No visible deformity or swelling in the lower back",
+                    "Palpation": "Tenderness over the lumbar region",
+                    "Range_of_Motion": "Limited due to pain, especially in flexion and extension",
+                    "Neurological": "Normal lower limb reflexes and sensation"
+                }
+            },
+            "Test_Results": {
+                "X-ray_Lumbosacral_Spine": {
+                    "Findings": "No evidence of fracture or dislocation"
+                }
+            },
+            "Correct_Diagnosis": "Adverse reaction to medication (muscle relaxants/NSAIDs)"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and diagnose the patient presenting with an unusual bump on the ear, with consideration for underlying systemic causes.",
+            "Patient_Actor": {
+                "Demographics": "45-year-old female",
+                "History": "The patient has noticed a bump on the top of her helix but has never worn a piercing in that area. She reports that it resembles a blister but is non-painful. The patient is reluctant to disclose additional personal or medical history.",
+                "Symptoms": {
+                    "Primary_Symptom": "Non-painful bump on the helix of the ear",
+                    "Secondary_Symptoms": [
+                        "No associated pain",
+                        "Uncertain duration of presence"
+                    ]
+                },
+                "Past_Medical_History": "Patient hesitates to provide detailed past medical history but denies any history of trauma or piercings.",
+                "Social_History": "Patient is reserved about sharing her social history but indicates she lives alone and works in an office setting.",
+                "Review_of_Systems": "Denies any recent infections, fever, or systemic symptoms. No known allergies or chronic conditions disclosed."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.5\u00b0C (97.7\u00b0F)",
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "75 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Head_and_Neck_Examination": {
+                    "Inspection": "Small, firm, non-tender nodule on the upper helix of the right ear, with no surrounding erythema or warmth",
+                    "Palpation": "Nodule is mobile and not attached to underlying structures"
+                }
+            },
+            "Test_Results": {
+                "Ultrasound_of_Ear": {
+                    "Findings": "Hypoechoic nodule, likely representing a benign cyst or fibroma"
+                },
+                "Blood_Work": {
+                    "Complete_Blood_Count": "Within normal limits",
+                    "ESR_and_CRP": "Normal"
+                }
+            },
+            "Correct_Diagnosis": "Chondrodermatitis nodularis helicis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Assess and counsel the patient regarding the potential genetic risks and considerations in prenatal care.",
+            "Patient_Actor": {
+                "Demographics": "34-year-old female",
+                "History": "The patient is currently pregnant in her second trimester (22 weeks) and has been experiencing anxiety about the health of her baby due to her age and family history of genetic disorders. Her partner's brother was diagnosed with cystic fibrosis. She has been consistent with prenatal check-ups but is concerned about the genetic risks.",
+                "Symptoms": {
+                    "Primary_Symptom": "Anxiety about potential genetic disorders in the unborn child",
+                    "Secondary_Symptoms": [
+                        "No physical symptoms related to the pregnancy",
+                        "Concern due to family history of cystic fibrosis"
+                    ]
+                },
+                "Past_Medical_History": "Mild depression managed with sertraline for the past 5 years. No history of chronic illnesses or surgeries.",
+                "Social_History": "Works as a marketing manager in a high-stress environment. Non-smoker, occasional social drinker. Exercises regularly.",
+                "Review_of_Systems": "No significant findings except for anxiety related to the current pregnancy."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Blood_Pressure": "120/80 mmHg",
+                    "Heart_Rate": "75 bpm",
+                    "Respiratory_Rate": "16 breaths/min",
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)"
+                }
+            },
+            "Test_Results": {
+                "Genetic_Screening": {
+                    "Carrier_Screening": "Patient is a carrier for cystic fibrosis",
+                    "Ultrasound": "Normal fetal development with no anomalies detected"
+                }
+            },
+            "Correct_Diagnosis": "Carrier status for cystic fibrosis"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage a child presenting with persistent fungal skin infection resistant to initial treatments.",
+            "Patient_Actor": {
+                "Demographics": "9-year-old female",
+                "History": "The patient has been experiencing a persistent fungal infection for the past 8 months, primarily affecting the wrist, ankle, and groin areas. Multiple courses of oral antifungals like Terbinafine and Griseofulvin, as well as topical treatments with clotrimazole and butenafine, have been used with only temporary relief. The patient and her mother are concerned about the recurring nature of the infection.",
+                "Symptoms": {
+                    "Primary_Symptom": "Persistent ringworm infection on wrist, ankle, and groin",
+                    "Secondary_Symptoms": [
+                        "Itching and redness at affected sites",
+                        "Scaling and occasional cracking of the skin"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical or surgical history. No known allergies.",
+                "Social_History": "Lives with her parents and a younger brother. Active in school sports and swimming. No pets at home. Family does not smoke.",
+                "Review_of_Systems": "Denies any recent systemic symptoms such as fever or malaise. No recent travel or exposure to known infectious sources."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "102/68 mmHg",
+                    "Heart_Rate": "88 bpm",
+                    "Respiratory_Rate": "20 breaths/min"
+                },
+                "Dermatological_Examination": {
+                    "Inspection": "Circular erythematous plaques with raised borders and central clearing present on the wrist, ankle, and groin.",
+                    "Palpation": "Mild tenderness on palpation of affected areas.",
+                    "Special_Tests": "KOH prep shows hyphae consistent with dermatophyte infection."
+                }
+            },
+            "Test_Results": {
+                "Skin_Scraping": {
+                    "Findings": "Positive for dermatophyte infection (Trichophyton species)."
+                }
+            },
+            "Correct_Diagnosis": "Chronic dermatophyte infection"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and manage the adult patient presenting with an acute allergic reaction.",
+            "Patient_Actor": {
+                "Demographics": "28-year-old female",
+                "History": "The patient reports sudden onset of itching and hives approximately 30 minutes after consuming a salad at a restaurant. She has no known food allergies but has a history of seasonal allergies. The salad contained various nuts, which she does not usually eat. There is no associated respiratory distress or gastrointestinal symptoms. She has never experienced a similar reaction before.",
+                "Symptoms": {
+                    "Primary_Symptom": "Generalized itching and hives",
+                    "Secondary_Symptoms": [
+                        "Redness and swelling on the skin",
+                        "No difficulty breathing",
+                        "No gastrointestinal symptoms"
+                    ]
+                },
+                "Past_Medical_History": "Seasonal allergic rhinitis managed with antihistamines. No history of asthma or eczema.",
+                "Social_History": "Non-smoker, occasional alcohol consumption, works as a graphic designer. Exercises regularly and follows a balanced diet.",
+                "Review_of_Systems": "Denies fever, chills, cough, or abdominal pain. No recent travels or new medications."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "37.0\u00b0C (98.6\u00b0F)",
+                    "Blood_Pressure": "120/75 mmHg",
+                    "Heart_Rate": "88 bpm",
+                    "Respiratory_Rate": "16 breaths/min"
+                },
+                "Skin_Examination": {
+                    "Inspection": "Widespread urticaria with erythematous wheals present on arms, trunk, and legs",
+                    "Palpation": "Skin warm and mildly edematous"
+                }
+            },
+            "Test_Results": {
+                "Complete_Blood_Count": {
+                    "Findings": "Mild eosinophilia"
+                },
+                "Allergy_Testing": {
+                    "Findings": "Pending; suspected nut allergy given recent exposure"
+                }
+            },
+            "Correct_Diagnosis": "Acute allergic reaction, likely due to nut allergy"
+        }
+    },
+    {
+        "OSCE_Examination": {
+            "Objective_for_Doctor": "Evaluate and diagnose a pediatric patient with abnormal stool patterns and vomiting following recent travel.",
+            "Patient_Actor": {
+                "Demographics": "4.5-year-old male",
+                "History": "The child recently returned from a vacation where he accidentally consumed uncooked chicken. Since then, he has been experiencing abnormal stools occurring 4-5 times a day, especially after eating or drinking milk. The stools are loose and have a foul odor. He vomited once in the evening. Previously, he had regular bowel movements once or twice a day.",
+                "Symptoms": {
+                    "Primary_Symptom": "Frequent loose stools",
+                    "Secondary_Symptoms": [
+                        "Vomiting",
+                        "Foul breath",
+                        "Increased bowel movement frequency after eating"
+                    ]
+                },
+                "Past_Medical_History": "No significant past medical history. Vaccinations are up-to-date.",
+                "Social_History": "Lives with parents in an urban setting, attends preschool. No known allergies. Family does not smoke.",
+                "Review_of_Systems": "No fever, rash, or blood in stools. Normal urine output and energy levels."
+            },
+            "Physical_Examination_Findings": {
+                "Vital_Signs": {
+                    "Temperature": "36.7\u00b0C (98.1\u00b0F)",
+                    "Blood_Pressure": "90/60 mmHg",
+                    "Heart_Rate": "100 bpm",
+                    "Respiratory_Rate": "22 breaths/min"
+                },
+                "Abdominal_Examination": {
+                    "Inspection": "Abdomen appears normal without distension",
+                    "Auscultation": "Normal bowel sounds",
+                    "Palpation": "Mild tenderness in the lower abdomen, no masses or organomegaly",
+                    "Percussion": "Tympanic"
+                }
+            },
+            "Test_Results": {
+                "Stool_Culture": {
+                    "Findings": "Presence of non-typhoidal Salmonella"
+                }
+            },
+            "Correct_Diagnosis": "Salmonella gastroenteritis"
+        }
+    }
+]

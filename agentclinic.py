@@ -3,10 +3,38 @@ import anthropic
 from transformers import pipeline
 import openai, re, random, time, json, replicate, os
 from openai import OpenAI
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
+from accelerate import init_empty_weights, infer_auto_device_map
+from accelerate import load_checkpoint_and_dispatch
+#import deepspeed
+import torch.distributed as dist
 
 llama2_url = "meta/llama-2-70b-chat"
 llama3_url = "meta/meta-llama-3-70b-instruct"
 mixtral_url = "mistralai/mixtral-8x7b-instruct-v0.1"
+
+# def setup_distributed():
+#     # For torch.distributed.launch or torchrun
+#     if 'RANK' in os.environ and 'WORLD_SIZE' in os.environ:
+#         rank = int(os.environ['RANK'])
+#         world_size = int(os.environ['WORLD_SIZE'])
+#         dist.init_process_group(backend='nccl', rank=rank, world_size=world_size)
+#     else:
+#         # For single-node multi-GPU
+#         dist.init_process_group(backend='nccl')
+#         rank = dist.get_rank()
+#         world_size = dist.get_world_size()
+#     return rank, world_size
+
+def setup_distributed():
+    if not dist.is_initialized():
+        dist.init_process_group(backend='nccl')
+    rank = dist.get_rank()
+    world_size = dist.get_world_size()
+    torch.cuda.set_device(rank) 
+    return rank, world_size
+
 
 def load_huggingface_model(model_name):
     pipe = pipeline("text-generation", model=model_name, device_map="auto")
@@ -132,14 +160,21 @@ def query_model(model_str, prompt, system_prompt, tries=30, timeout=20.0, image_
             messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": prompt}]
-            response = openai.ChatCompletion.create(
-                    model="gpt-4o",
-                    messages=messages,
+
+            client = OpenAI(api_key="")
+            chat_completion = client.chat.completions.create(model="gpt-4o", messages=messages,
                     temperature=0.05,
-                    max_tokens=200,
-                )
-            answer = response["choices"][0]["message"]["content"]
+                    max_tokens=200,)
+            answer = chat_completion.choices[0].message.content
             answer = re.sub("\s+", " ", answer)
+            # response = openai.ChatCompletion.create(
+            #         model="gpt-4o",
+            #         messages=messages,
+            #         temperature=0.05,
+            #         max_tokens=200,
+            #     )
+            # answer = response["choices"][0]["message"]["content"]
+            # answer = re.sub("\s+", " ", answer)
         elif model_str == 'llama-2-70b-chat':
             output = replicate.run(
                 llama2_url, input={
@@ -165,18 +200,130 @@ def query_model(model_str, prompt, system_prompt, tries=30, timeout=20.0, image_
             answer = ''.join(output)
             answer = re.sub("\s+", " ", answer)
         elif model_str == "llama-3-70b-meditron":
-            client = OpenAI(base_url="http://104.171.203.227:8000/v1", api_key="EMPTY")
-            # default values
-            temperature = 0.6
-            max_tokens = 1024
-            top_p = 0.9
-            messages = [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": prompt}]
-            #print(messages)
+            # client = OpenAI(base_url="http://104.171.203.227:8000/v1", api_key="EMPTY")
+            # # default values
+            # temperature = 0.6
+            # max_tokens = 1024
+            # top_p = 0.9
+            # messages = [
+            #     {"role": "system", "content": system_prompt},
+            #     {"role": "user", "content": prompt}]
+            # #print(messages)
 
-            response = client.chat.completions.create(model="llama-3-70b-meditron", messages=messages, temperature=temperature, top_p=top_p, max_tokens=max_tokens)
-            answer = response.choices[0].message.content
+            # response = client.chat.completions.create(model="llama-3-70b-meditron", messages=messages, temperature=temperature, top_p=top_p, max_tokens=max_tokens)
+            # answer = response.choices[0].message.content
+            model_path = "/mloscratch/homes/bbernath/meditron_instruct"
+            #rank, world_size = setup_distributed()
+            # with init_empty_weights():
+            #     #model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.1-70B-Instruct")
+            #     model = AutoModelForCausalLM.from_pretrained(model_path)
+            # device_map = infer_auto_device_map(
+            #     model,
+            #     max_memory={0: "75GB", 1: "75GB", 2: "75GB", 3: "75GB"},
+            #     no_split_module_classes=["LlamaDecoderLayer"]
+            # )
+            # model.gradient_checkpointing_enable()
+            # model = load_checkpoint_and_dispatch(
+            #     model,
+            #     model_path,
+            #     device_map=device_map,
+            #     no_split_module_classes=["LlamaDecoderLayer"]
+            # )
+            # tokenizer = AutoTokenizer.from_pretrained(model_path)
+            # messages = [
+            #     {"role": "system", "content": system_prompt},
+            #     {"role": "user", "content": prompt}
+            # ]
+            # input_message = tokenizer.apply_chat_template(messages, tokenize=False)
+            # tokenized_input = tokenizer(input_message, return_tensors="pt")
+            # input_ids = tokenized_input["input_ids"]
+            # # Set use_cache=False to avoid device mismatch errors
+            # outputs = model.generate(
+            #     input_ids=input_ids,
+            #     max_length=1024,
+            #     temperature=0.6,
+            #     top_p=0.9,
+            #     num_return_sequences=1,
+            #     use_cache=False  # Important when using sharded models
+            # )
+
+            # answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            # print(answer)
+
+
+
+            # Load model with DeepSpeed inference engine
+            # model = deepspeed.init_inference(
+            #     model,
+            #     dtype=torch.float16,  # or torch.bfloat16 if supported
+            #     tensor_parallel={"tp_size": world_size},  # Number of GPUs
+            # )
+
+
+            # # Load tokenizer and prepare input
+            # tokenizer = AutoTokenizer.from_pretrained(model_path)
+            # messages = [
+            #     {"role": "system", "content": system_prompt},
+            #     {"role": "user", "content": prompt}
+            # ]
+            # input_message = tokenizer.apply_chat_template(messages, tokenize=False)
+            # tokenized_input = tokenizer(input_message, return_tensors="pt")
+            # input_ids = tokenized_input["input_ids"]
+            # device = torch.device(f'cuda:{rank}')
+            # input_ids = input_ids.to(device)
+
+            # # Keep input_ids on CPU
+
+            # # Perform inference
+            # outputs = model.generate(
+            #     input_ids,
+            #     max_length=1024,
+            #     temperature=0.6,
+            #     top_p=0.9,
+            #     num_return_sequences=1
+            # )
+            # if rank == 0:
+            #     answer = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            #     print(answer)
+            # else:
+            #     answer = None
+            #     print("------------------------------------------not rank 0--------------------------------------")
+
+            # Decode and print the response
+            # response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+            # print(response)
+            with init_empty_weights():
+                model = AutoModelForCausalLM.from_pretrained(model_path)
+
+            # Automatically infer how to split the model across two GPUs
+            device_map = infer_auto_device_map(model, max_memory={0: "80GB", 1: "80GB", 2: "80GB", 3: "80GB"}, no_split_module_classes=["LlamaDecoderLayer"])
+
+            # Load model with the device map
+            model.gradient_checkpointing_enable()
+            model = load_checkpoint_and_dispatch(model, model_path, device_map=device_map)
+
+            tokenizer = AutoTokenizer.from_pretrained(model_path)
+            messages = [{"role": "system", "content": system_prompt},
+                        {"role": "user", "content": prompt}]
+            input_message = tokenizer.apply_chat_template(messages, tokenize = False)
+            tokenized_input = tokenizer(input_message, return_tensors="pt")
+            input_ids = tokenized_input["input_ids"]
+            #embedding_device = model.get_submodule('model.embed_tokens').weight.device
+
+            # Move input_ids to the correct device
+            #input_ids = input_ids.to(embedding_device)
+
+            # Perform inference
+            outputs = model.generate(input_ids, max_length=4096, temperature=0.6, top_p=0.9, num_return_sequences=1)
+            #tokenized_input = torch.tensor(tokenizer.apply_chat_template(messages)).unsqueeze(0).to("cuda")
+            #output = model.generate(input_ids, max_length=1024, do_sample=True, temperature=0.6, top_p=0.9, num_return_sequences=1)#model.generate(tokenized_input, max_length=1024, do_sample=True, temperature=0.6, top_p=0.9, num_return_sequences=1)
+            generated_tokens = outputs[0][len(input_ids[0]):]  # Slice off the input part from the output
+
+            # Decode only the generated portion of the sequence
+            answer = tokenizer.decode(generated_tokens, skip_special_tokens=True)
+            #answer = tokenizer.decode(outputs[0], skip_special_tokens=True).replace(input_message, "")
+            print("------------------------------------------answer--------------------------------------")
+            print(answer)
 
         elif "HF_" in model_str:
             input_text = system_prompt + prompt 
@@ -271,6 +418,47 @@ class ScenarioLoaderMedQAExtended:
         if id is None: return self.sample_scenario()
         return self.scenarios[id]
         
+class ScenarioHealthCareMagic:
+    def __init__(self, scenario_dict) -> None:
+        # Assuming similar structure to MedQA, adjust these if the structure differs
+        self.scenario_dict = scenario_dict
+        self.tests = scenario_dict["OSCE_Examination"]["Test_Results"]
+        if "Correct_Diagnosis" in scenario_dict["OSCE_Examination"]:
+            self.diagnosis = scenario_dict["OSCE_Examination"]["Correct_Diagnosis"]
+        else:
+            self.diagnosis = scenario_dict["Correct_Diagnosis"]
+        self.patient_info = scenario_dict["OSCE_Examination"]["Patient_Actor"]
+        self.examiner_info = scenario_dict["OSCE_Examination"]["Objective_for_Doctor"]
+        self.physical_exams = scenario_dict["OSCE_Examination"]["Physical_Examination_Findings"]
+
+    def patient_information(self) -> dict:
+        return self.patient_info
+
+    def examiner_information(self) -> dict:
+        return self.examiner_info
+    
+    def exam_information(self) -> dict:
+        exams = self.physical_exams
+        exams["tests"] = self.tests
+        return exams
+    
+    def diagnosis_information(self) -> dict:
+        return self.diagnosis
+
+
+class ScenarioLoaderHealthCareMagic:
+    def __init__(self) -> None:
+        with open("agentclinic_HealthCareMagic.json", "r") as f:
+            self.scenario_strs = json.load(f)
+        self.scenarios = [ScenarioHealthCareMagic(_str) for _str in self.scenario_strs]
+        self.num_scenarios = len(self.scenarios)
+    
+    def sample_scenario(self):
+        return self.scenarios[random.randint(0, len(self.scenarios)-1)]
+    
+    def get_scenario(self, id):
+        if id is None: return self.sample_scenario()
+        return self.scenarios[id]
 
 
 class ScenarioMIMICIVQA:
@@ -393,7 +581,7 @@ class ScenarioLoaderNEJM:
 
 
 class PatientAgent:
-    def __init__(self, scenario, backend_str="gpt4", bias_present=None) -> None:
+    def __init__(self, scenario, backend_str="gpt4", bias_present=None, setting = "high") -> None:
         # disease of patient, or "correct answer"
         self.disease = ""
         # symptoms that patient presents
@@ -408,6 +596,7 @@ class PatientAgent:
         self.scenario = scenario
         self.reset()
         self.pipe = None
+        self.setting = setting
 
         self.biases = ["recency", "frequency", "false_consensus", "self_diagnosis", "gender", "race", "sexual_orientation", "cultural", "education", "religion", "socioeconomic"]
 
@@ -454,6 +643,10 @@ class PatientAgent:
         bias_prompt = ""
         if self.bias_present is not None:
             bias_prompt = self.generate_bias()
+        patient_setting = {"high":"", "low": "You live in a low ressource setting", "war": "You are in a war zone"}
+        time_setting = ["You have plenty of time to discuss your symptoms with the doctor", "You have limited time to discuss your symptoms with the doctor"]
+        eduction_background = ["You have a high level of education", "You have a low level of education"]
+        trust = ["You trust the doctor", "You do not trust the doctor"]
         base = """You are a patient in a clinic who only responds in the form of dialogue. You are being inspected by a doctor who will ask you questions and will perform exams on you in order to understand your disease. Your answer will only be 1-3 sentences in length."""
         symptoms = "\n\nBelow is all of your information. {}. \n\n Remember, you must not reveal your disease explicitly but may only convey the symptoms you have in the form of dialogue if you are asked.".format(self.symptoms)
         return base + bias_prompt + symptoms
@@ -467,7 +660,7 @@ class PatientAgent:
 
 
 class DoctorAgent:
-    def __init__(self, scenario, backend_str="gpt4", max_infs=20, bias_present=None, img_request=False) -> None:
+    def __init__(self, scenario, backend_str="gpt4", max_infs=20, bias_present=None, img_request=False, knows_diagnosis=False, correct_diagnosis="", number_of_sentences = "1-2", system_prompt = None, setting = "high") -> None:
         # number of inference calls to the doctor
         self.infs = 0
         # maximum number of inference calls to the doctor
@@ -484,7 +677,17 @@ class DoctorAgent:
         self.scenario = scenario
         self.reset()
         self.pipe = None
+        self.knows_diagnosis = knows_diagnosis
+        self.correct_diagnosis = correct_diagnosis
         self.img_request = img_request
+        self.number_of_sentences = number_of_sentences
+        self.setting = setting
+
+        if system_prompt is None:
+            setting_doctor = {"high":"high ressource setting, you have access to any equipment", "low":"low ressource setting, you shouldn't request any expensive tests unless necessary", "war":"war zone setting, try to make a diagnosis quickly and with minimal resources, be direct and empathetic"}
+            self.base = "You are a doctor in a {}, you only responds in the form of dialogue. You are inspecting a patient who you will ask questions in order to understand their disease. You are only allowed to ask {} questions total before you must make a decision. You have asked {} questions so far. You can request test results using the format \"REQUEST TEST: [test]\". For example, \"REQUEST TEST: Chest_X-Ray\". Your dialogue will be {} sentences in length. Once you have decided to make a diagnosis please type \"DIAGNOSIS READY: [diagnosis here]\"".format(self.setting_doctor[self.setting], self.MAX_INFS, self.infs, self.number_of_sentences) + ("You may also request medical images related to the disease to be returned with \"REQUEST IMAGES\"." if self.img_request else "") + (f"You suspect that the patient suffers from {self.correct_diagnosis}. This affects the questions you ask the patient." if self.knows_diagnosis else "")" 
+        else:
+            self.base = system_prompt
         self.biases = ["recency", "frequency", "false_consensus", "confirmation", "status_quo", "gender", "race", "sexual_orientation", "cultural", "education", "religion", "socioeconomic"]
 
     def generate_bias(self) -> str:
@@ -535,7 +738,7 @@ class DoctorAgent:
         bias_prompt = ""
         if self.bias_present is not None:
             bias_prompt = self.generate_bias()
-        base = "You are a doctor named Dr. Agent who only responds in the form of dialogue. You are inspecting a patient who you will ask questions in order to understand their disease. You are only allowed to ask {} questions total before you must make a decision. You have asked {} questions so far. You can request test results using the format \"REQUEST TEST: [test]\". For example, \"REQUEST TEST: Chest_X-Ray\". Your dialogue will only be 1-3 sentences in length. Once you have decided to make a diagnosis please type \"DIAGNOSIS READY: [diagnosis here]\"".format(self.MAX_INFS, self.infs) + ("You may also request medical images related to the disease to be returned with \"REQUEST IMAGES\"." if self.img_request else "")
+        base = self.base 
         presentation = "\n\nBelow is all of the information you have. {}. \n\n Remember, you must discover their disease by asking them questions. You are also able to provide exams.".format(self.presentation)
         return base + bias_prompt + presentation
 
@@ -581,7 +784,7 @@ def compare_results(diagnosis, correct_diagnosis, moderator_llm, mod_pipe):
     return answer.lower()
 
 
-def main(api_key, replicate_api_key, inf_type, doctor_bias, patient_bias, doctor_llm, patient_llm, measurement_llm, moderator_llm, num_scenarios, dataset, img_request, total_inferences, anthropic_api_key=None):
+def main(api_key, replicate_api_key, inf_type, doctor_bias, patient_bias, doctor_llm, patient_llm, measurement_llm, moderator_llm, num_scenarios, dataset, img_request, total_inferences, anthropic_api_key=None, number_of_sentences="1-2"):
     openai.api_key = api_key
     anthropic_llms = ["claude3.5sonnet"]
     replicate_llms = ["llama-3-70b-instruct", "llama-2-70b-chat", "mixtral-8x7b"]
@@ -601,10 +804,19 @@ def main(api_key, replicate_api_key, inf_type, doctor_bias, patient_bias, doctor
         scenario_loader = ScenarioLoaderNEJMExtended()
     elif dataset == "MIMICIV":
         scenario_loader = ScenarioLoaderMIMICIV()
+    elif dataset == "HealthCareMagic":
+        scenario_loader = ScenarioLoaderHealthCareMagic()
+
+    elif dataset == "new_patient":
+        with open("generated_patient.jsonl", "r") as f:
+            for line in f:
+                scenario_dict = json.loads(line)
+                
     else:
         raise Exception("Dataset {} does not exist".format(str(dataset)))
     total_correct = 0
     total_presents = 0
+    setting = =["high", "low", "war"]
 
     # Pipeline for huggingface models
     if "HF_" in moderator_llm:
@@ -630,7 +842,10 @@ def main(api_key, replicate_api_key, inf_type, doctor_bias, patient_bias, doctor
             bias_present=doctor_bias,
             backend_str=doctor_llm,
             max_infs=total_inferences, 
-            img_request=img_request)
+            img_request=img_request,
+            knows_diagnosis=True,
+            correct_diagnosis=scenario.diagnosis_information(),
+            number_of_sentences=number_of_sentences)
 
         doctor_dialogue = ""
         for _inf_id in range(total_inferences):
@@ -653,6 +868,7 @@ def main(api_key, replicate_api_key, inf_type, doctor_bias, patient_bias, doctor
             if "DIAGNOSIS READY" in doctor_dialogue:
                 correctness = compare_results(doctor_dialogue, scenario.diagnosis_information(), moderator_llm, pipe) == "yes"
                 if correctness: total_correct += 1
+                print("\nDoctor dialogue:", doctor_dialogue)
                 print("\nCorrect answer:", scenario.diagnosis_information())
                 print("Scene {}, The diagnosis was ".format(_scenario_id), "CORRECT" if correctness else "INCORRECT", int((total_correct/total_presents)*100))
                 break
@@ -689,7 +905,8 @@ if __name__ == "__main__":
     parser.add_argument('--num_scenarios', type=int, default=15, required=False, help='Number of scenarios to simulate')
     parser.add_argument('--total_inferences', type=int, default=20, required=False, help='Number of inferences between patient and doctor')
     parser.add_argument('--anthropic_api_key', type=str, default=None, required=False, help='Anthropic API key for Claude 3.5 Sonnet')
+    parser.add_argument('--number_of_sentences', type=str, default="1-2", required=False, help='Number of sentences for doctor to respond with')
     
     args = parser.parse_args()
 
-    main(args.openai_api_key, args.replicate_api_key, args.inf_type, args.doctor_bias, args.patient_bias, args.doctor_llm, args.patient_llm, args.measurement_llm, args.moderator_llm, args.num_scenarios, args.agent_dataset, args.doctor_image_request, args.total_inferences, args.anthropic_api_key)
+    main(args.openai_api_key, args.replicate_api_key, args.inf_type, args.doctor_bias, args.patient_bias, args.doctor_llm, args.patient_llm, args.measurement_llm, args.moderator_llm, args.num_scenarios, args.agent_dataset, args.doctor_image_request, args.total_inferences, args.anthropic_api_key, args.number_of_sentences)
